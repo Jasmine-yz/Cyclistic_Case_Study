@@ -6,7 +6,7 @@
 ### Data Sources
 I will be using Cyclistic historical trip data from Jan,2023 to Dec,2023, which can be downloaded [HERE](https://divvy-tripdata.s3.amazonaws.com/index.html), The data has been made available by Motivate International Inc. under this [lisence](https://divvybikes.com/data-license-agreement). This is public data that you can use to explore how different customer types are using Cyclistic bikes.But note that data-privacy issues prohibit you from using riders'personally identiable information. This means that you won't be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
-The data is stored in spreadsheets in a total of 12 .csv files
+The data is stored in spreadsheets in a total of 12 .csv files, each file includes information for one month.
 
 ```
 1. 202301-divvy-tripdata.csv
@@ -22,7 +22,7 @@ The data is stored in spreadsheets in a total of 12 .csv files
 11.202311-divvy-tripdata.csv
 12.202312-divvy-tripdata.csv
 ```
-It is well structured data and is organized into rows and columns. The following are the field name.
+The data is well-structured with rows and columns, and each table maintains consistent column count and field names.
 ```
 Index:
 'ride_id',                  # Ride id - unique 
@@ -37,12 +37,24 @@ Index:
 'start_lng',                # Trip start longitude
 'end_lat',                  # Trip end latitude
 'end_lng',                  # Trip end longitude
-'member_casual'            # Rider Types: Member or Casual
+'member_casual'             # Rider Types: Member or Casual
 ```
 ## PROCESS
-### Data cleaning and Manipulation
-Tool Chosen: BigQuery
+## Data cleaning and Manipulation
+
+**Tool Chosen:** BigQuery
 Reason:
 - Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
 - In Contrast to Excel, SQL is fast and can handle large loads of data.
+
+### Combining the Data
+
+SQL Query: [Data Combining](###########)
+I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `2023_biketrips`.
+
+### Data Exploration
+SQL Query: [Data Exploration](#######)
+
+Step1: Let's check the **Schema** and **Detail**  of 2023_biketrips table. 
+
 
