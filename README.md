@@ -22,3 +22,27 @@ The data is stored in spreadsheets in a total of 12 .csv files
 11.202311-divvy-tripdata.csv
 12.202312-divvy-tripdata.csv
 ```
+It is well structured data and is organized into rows and columns. The following are the field name.
+```
+Index:
+'ride_id',                  # Ride id - unique 
+'rideable_type'             # Bike type - Classic, Docked,Electric
+'started_at',               # Trip start day and time
+'ended_at',                 # Trip end day and and time
+'start_station_name',       # Trip start station name
+'start_station_id',         # Trip start station ID
+'end_station_name',         # Trip end station name
+'end_station_id',           # Trip end station ID
+'start_lat',                # Trip start latitude
+'start_lng',                # Trip start longitude
+'end_lat',                  # Trip end latitude
+'end_lng',                  # Trip end longitude
+'member_casual'            # Rider Types: Member or Casual
+```
+## PROCESS
+### Data cleaning and Manipulation
+Tool Chosen: BigQuery
+Reason:
+- Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
+- In Contrast to Excel, SQL is fast and can handle large loads of data.
+
