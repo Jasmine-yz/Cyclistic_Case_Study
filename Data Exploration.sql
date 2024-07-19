@@ -1,5 +1,7 @@
 
---Check the number of null value in each field.
+
+
+--2. Checking the number of null value in each field.
 
 SELECT 
   SUM(CASE WHEN ride_id IS NULL THEN 1 ELSE 0 END) AS ride_id,
@@ -16,3 +18,10 @@ SELECT
   SUM(CASE WHEN end_lng IS NULL THEN 1 ELSE 0 END) AS end_lng,
   SUM(CASE WHEN member_casual IS NULL THEN 1 ELSE 0 END) AS member_casual
 FROM `project-1-429715.gda_capstone_1.2023_biketrips`;
+
+--3.Checking for duplicate data
+
+SELECT ride_id, COUNT(*) AS num_duplicates
+  FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
+  GROUP BY ride_id
+  HAVING COUNT(ride_id) > 1;
