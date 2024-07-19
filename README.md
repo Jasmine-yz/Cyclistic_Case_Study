@@ -60,7 +60,7 @@ SQL Query: [Data Exploration](#######)
 
 <img width="365" alt="Screenshot" src="https://github.com/user-attachments/assets/caa7e8ac-9820-4abc-a417-3c5d111345ce">
 
-Observations:  
+**Observations:**  
 a) The **ride_id** field is the primary key.  
 b) There are 5,719,877 rows and 13 columns.  
 
@@ -70,7 +70,17 @@ b) There are 5,719,877 rows and 13 columns.
 
 3. Checking for duplicate data (since the primary key has no null value)
 
-Verification: Dataset contains uqique row only
+**Verification:** Dataset contains uqique row only
+
+4. Length Constraints: ride_id
+
+**Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
+
+5. rideable_type -- 3 unique bike types:
+
+<img width="386" alt="rideable_type" src="https://github.com/user-attachments/assets/894df1b0-9430-4dbc-b7dd-0d275488b5fe">
+
+
 
 
    
