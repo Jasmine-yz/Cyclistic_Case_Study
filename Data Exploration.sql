@@ -25,3 +25,37 @@ SELECT ride_id, COUNT(*) AS num_duplicates
   FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
   GROUP BY ride_id
   HAVING COUNT(ride_id) > 1;
+
+--4.Length Constraints: ride_id
+
+SELECT ride_id,
+      LENGTH(ride_id) AS length_ride_id, 
+      COUNT(*) AS num_rows
+FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
+GROUP BY ride_id, length_ride_id
+ORDER BY length_ride_id DESC, ride_id
+lIMIT 10;
+
+--5.Unique rideable_types 
+
+SELECT 
+  DISTINCT rideable_type,
+  COUNT(*) AS num_bike_trips
+FROM `project-1-429715.gda_capstone_1.2023_biketrips`
+GROUP BY rideable_type;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
