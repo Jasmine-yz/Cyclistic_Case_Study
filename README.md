@@ -56,14 +56,18 @@ I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then est
 ### Data Exploration
 SQL Query: [Data Exploration](#######)
 
-Step1: Let's check the **Schema** and **Detail**  of 2023_biketrips table. 
+1. Let's check the **Schema** and **Detail**  of 2023_biketrips table. 
 
 <img width="365" alt="Screenshot" src="https://github.com/user-attachments/assets/caa7e8ac-9820-4abc-a417-3c5d111345ce">
 
-Observations:
-a) The **ride_id** field is the primary key.
-b) There are 5,719,877 rows and 13 columns.
+Observations:  
+a) The **ride_id** field is the primary key.  
+b) There are 5,719,877 rows and 13 columns.  
 
+2. The following table indicates number of null values in each field.
 
+![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
+
+3. 
 
 
