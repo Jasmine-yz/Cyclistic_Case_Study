@@ -64,10 +64,16 @@ Observations:
 a) The **ride_id** field is the primary key.  
 b) There are 5,719,877 rows and 13 columns.  
 
-2. Check the number of **null value** in each field.
+2. Checking the number of **null value** in each field.
 
 ![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
 
-3. 
+3. Checking for duplicate data (since the primary key has no null value)
+
+Verification: Dataset contains uqique row only
+
+
+   
+
 
 
