@@ -1,5 +1,5 @@
 
-
+--Check the number of null value in each field.
 
 SELECT 
   SUM(CASE WHEN ride_id IS NULL THEN 1 ELSE 0 END) AS ride_id,
