@@ -78,12 +78,13 @@ b) There are 5,719,877 rows and 13 columns.
 
 **Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
 
-5. The started_at and ended_at fields indicate the start time and end times of the trip in yyyy-MM-dd hh:mm:ss UTC format. The ride_length, day_of_week, and month fields will be created during the **Cleaning process**, followed by additional exploration such as identifying outliers.
+5. The started_at and ended_at fields indicate the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format. The ride_length, day_of_week, and month fields will be created during the **Cleaning process**, followed by additional exploration such as identifying outliers.
 
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
 - ride_length, day_of_week, and month fields are added.
+
 
 
    
