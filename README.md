@@ -68,6 +68,8 @@ b) There are 5,719,877 rows and 13 columns.
 
 ![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
 
+**Verification:** Note that there are many missing values for the station-related information, and since this fields is not critical for further analysis, we will keep these empty values so far. 
+
 3. Checking for duplicate data (since the primary key has no null value)
 
 **Verification:** Dataset contains uqique row only
@@ -76,10 +78,10 @@ b) There are 5,719,877 rows and 13 columns.
 
 **Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
 
-5. rideable_type -- 3 unique bike types:
+5. The started_at and ended_at fields indicate the start time and end times of the trip in yyyy-MM-dd hh:mm:ss UTC format. The ride_length, day_of_week, and month fields will be created during the **Cleaning process**, followed by additional exploration such as identifying outliers.
 
-<img width="386" alt="rideable_type" src="https://github.com/user-attachments/assets/894df1b0-9430-4dbc-b7dd-0d275488b5fe">
-
+### Data Cleaning
+SQL Query: [Data Cleaning](####)
 
 
 
