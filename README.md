@@ -68,7 +68,9 @@ b) There are 5,719,877 rows and 13 columns.
 
 ![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
 
-**Verification:** Note that there are many missing values for the station-related information, and since this fields is not critical for further analysis, we will keep these empty values so far. 
+**Verification:** 
+- missing values in some columns
+- since we won't use start_station_id and end_station_id 
 
 3. Checking for duplicate data (since the primary key has no null value)
 
