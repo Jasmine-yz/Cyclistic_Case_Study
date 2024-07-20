@@ -36,13 +36,7 @@ GROUP BY ride_id, length_ride_id
 ORDER BY length_ride_id DESC, ride_id
 lIMIT 10;
 
---5.Unique rideable_types 
 
-SELECT 
-  DISTINCT rideable_type,
-  COUNT(*) AS num_bike_trips
-FROM `project-1-429715.gda_capstone_1.2023_biketrips`
-GROUP BY rideable_type;
 
 
 
