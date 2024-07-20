@@ -34,7 +34,7 @@ CREATE TABLE project-1-429715.gda_capstone_1.2023_biketrips_updated AS(
     end_station_name,
     start_lat,
     start_lng,
-    end_lat
+    end_lat,
     end_lng,
     member_casual AS user_type,
 FROM `project-1-429715.gda_capstone_1.2023_biketrips`
