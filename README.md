@@ -49,7 +49,7 @@ Reason:
 
 ### Combining the Data
 
-SQL Query: [Data Combining](###########);
+SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Combining.sql);
 
 I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `2023_biketrips`.
 
