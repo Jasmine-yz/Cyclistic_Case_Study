@@ -54,7 +54,7 @@ SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/b
 I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `2023_biketrips`.
 
 ### Data Exploration
-SQL Query: [Data Exploration](#######)
+SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
 
 1. Let's check the **Schema** and **Detail**  of 2023_biketrips table. 
 
