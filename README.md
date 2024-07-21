@@ -69,8 +69,9 @@ b) There are 5,719,877 rows and 13 columns.
 ![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
 
 **Verification:** 
-- missing values in some columns
-- since we won't use start_station_id and end_station_id 
+- missing values were identified in several columns. Null values in start_station_name, end_station_name, end_lat and end_lng fields will be removed during cleaning process. 
+- additionally, The start_station_id and end_station_id fields will be deleted from our analysis as they do not contribute relevant information. 
+- Note: ##############
 
 3. Checking for duplicate data (since the primary key has no null value)
 
@@ -86,6 +87,7 @@ b) There are 5,719,877 rows and 13 columns.
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
 - ride_length, day_of_week, and month fields are added.
+- 
 
 
 
