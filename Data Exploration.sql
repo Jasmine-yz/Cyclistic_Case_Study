@@ -36,8 +36,15 @@ GROUP BY ride_id, length_ride_id
 ORDER BY length_ride_id DESC, ride_id
 lIMIT 10;
 
+--5. The trip longer than a day (Total of rows = 6418)
+SELECT COUNT(*) AS longer_than_a_day
+FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
+WHERE TIMESTAMP_DIFF(ended_at,started_at,MINUTE) >= 1440;
 
-
+--6. The trip less than a miniute (Total of rows = 149615)
+SELECT COUNT(*) AS less_than_a_mins
+FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
+WHERE TIMESTAMP_DIFF(ended_at,started_at,MINUTE) < 1;
 
 
 
