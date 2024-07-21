@@ -1,6 +1,6 @@
 
 
-CREATE TABLE project-1-429715.gda_capstone_1.2023_biketrips_updated AS(
+CREATE TABLE 2023_biketrips_updated AS(
   SELECT
     ride_id,
     rideable_type,
@@ -37,13 +37,13 @@ CREATE TABLE project-1-429715.gda_capstone_1.2023_biketrips_updated AS(
     end_lat,
     end_lng,
     member_casual AS user_type,
-FROM `project-1-429715.gda_capstone_1.2023_biketrips`
+FROM `2023_biketrips`
 WHERE
   start_station_name IS NOT NULL
   AND end_station_name IS NOT NULL
   AND end_lat IS NOT NULL
   AND end_lng IS NOT NULL
-  AND TIMESTAMP_DIFF(ended_at,started_at,SECOND) > 0
+  AND TIMESTAMP_DIFF(ended_at,started_at,SECOND) > 60
   AND TIMESTAMP_DIFF(ended_at,started_at,SECOND) < 86400
 );
 
