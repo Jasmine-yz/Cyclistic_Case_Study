@@ -75,7 +75,7 @@ b) There are 5,719,877 rows and 13 columns.
 
 3. Checking for duplicate data (since the primary key has no null value)
 
-**Verification:** Dataset contains uqique row only
+**Verification:** Dataset contains unique row only
 
 4. Length Constraints: ride_id
 
@@ -86,8 +86,10 @@ b) There are 5,719,877 rows and 13 columns.
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
-- ride_length, day_of_week, and month fields are added.
-- 
+- We added ride_length, day_of_week, and month fields to the dataset.
+- All the missing values have removed
+- Trips with duration longer than a day or less than a minute were deteted.
+- A total 1,476,445 rows were removed during this process.
 
 
 
