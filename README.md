@@ -85,7 +85,7 @@ b) There are 5,719,877 rows and 13 columns.
 <img width="386" alt="rideable_type" src="https://github.com/user-attachments/assets/b27521c6-5863-404d-9185-9a07a4c79a00">
 
 6. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
-   - To calculate the total trip duration for each trip, we will create a field called ride_length field.
+   - To calculate the total trip duration for each trip, we will create a field called **ride_length** field.
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
    <img width="511" alt="max_min_length" src="https://github.com/user-attachments/assets/ee8ebbe0-9265-46a8-869e-977d8cb02ffc">
    
@@ -93,16 +93,11 @@ b) There are 5,719,877 rows and 13 columns.
 
    - According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/360033484791-What-if-I-keep-a-bike-out-too-long#:~:text=Day%20Pass%20holders%3A%20unlimited%20number,included%20in%20the%20membership%20price.), failing to return a bike within 24-hours may result in a $250 fee for loss or theft.
    - We will exclude trips with a ride_length greater 24 hours and less than 1 minute.
+
    
 
    
   
-
-
-
-
-
-
 day_of_week, and month fields will be created during the **Cleaning process**
 
 
