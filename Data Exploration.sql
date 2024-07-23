@@ -26,7 +26,7 @@ SELECT ride_id, COUNT(*) AS num_duplicates
   GROUP BY ride_id
   HAVING COUNT(ride_id) > 1;
 
---4.Length Constraints: ride_id
+--4.Length Constraints: 'ride_id'
 
 SELECT ride_id,
       LENGTH(ride_id) AS length_ride_id, 
@@ -36,12 +36,29 @@ GROUP BY ride_id, length_ride_id
 ORDER BY length_ride_id DESC, ride_id
 lIMIT 10;
 
---5. The trip longer than a day (Total of rows = 6418)
+--5. Total trips for each unique 'rideable_type'
+SELECT
+  DISTINCT rideable_type,
+  COUNT(*) AS num_of_trips,
+FROM `project-1-429715.gda_capstone_1.2023_biketrips`
+GROUP BY rideable_type;
+
+--6. Check the MAXUM and MINIMUM  ride_length for each rideable_type.
+SELECT
+  rideable_type,
+  MAX(ROUND(TIMESTAMP_DIFF(ended_at, started_at, SECOND) / 60.0, 2)) AS ride_length_MAX,
+  MIN(ROUND(TIMESTAMP_DIFF(ended_at, started_at, SECOND) / 60.0, 2)) AS ride_length_MIN
+
+FROM `project-1-429715.gda_capstone_1.2023_biketrips`
+GROUP BY rideable_type;
+
+
+The trip longer than a day (Total of rows = 6418)
 SELECT COUNT(*) AS longer_than_a_day
 FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
 WHERE TIMESTAMP_DIFF(ended_at,started_at,MINUTE) >= 1440;
 
---6. The trip less than a miniute (Total of rows = 149615)
+The trip less than a miniute (Total of rows = 149615)
 SELECT COUNT(*) AS less_than_a_mins
 FROM `project-1-429715.gda_capstone_1.2023_biketrips` 
 WHERE TIMESTAMP_DIFF(ended_at,started_at,MINUTE) < 1;
