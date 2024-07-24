@@ -1,7 +1,7 @@
 
 
 
---2. Checking the number of null value in each field.
+--1. Checking the number of null value in each field.
 
 SELECT
   SUM((CASE WHEN ride_id IS NULL THEN 1 ELSE 0 END)) AS ride_id,
@@ -20,7 +20,7 @@ SELECT
   
 FROM `project-1-429715.divvy_tripdata.biketrips`
 
---3.Checking for duplicate data
+--2.Checking for duplicate data
 
 SELECT 
   ride_id,
@@ -29,7 +29,7 @@ FROM `project-1-429715.divvy_tripdata.biketrips`
   GROUP BY ride_id
   HAVING COUNT(ride_id) > 1;
 
---4.Length Constraints: 'ride_id'
+--3.Length Constraints: 'ride_id'
 
 SELECT 
     LENGTH(ride_id) AS ride_id_length,
@@ -38,7 +38,7 @@ FROM `project-1-429715.divvy_tripdata.biketrips`
 GROUP BY LENGTH(ride_id)
 ORDER BY ride_id_length;
 
---5. Total trips for each unique 'rideable_type'
+--4. Total trips for each unique 'rideable_type'
 
 SELECT
   DISTINCT rideable_type,
@@ -46,7 +46,7 @@ SELECT
 FROM `project-1-429715.divvy_tripdata.biketrips`
 GROUP BY rideable_type;
 
---6. Check the MAXUM and MINIMUM  ride_length for each rideable_type.
+--5. Check the MAXUM and MINIMUM  ride_length for each rideable_type.
 
 SELECT
   rideable_type,
