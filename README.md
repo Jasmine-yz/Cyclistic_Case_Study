@@ -9,18 +9,18 @@ I will be using Cyclistic historical trip data from Jan,2023 to Dec,2023, which 
 The data is stored in spreadsheets in a total of 12 .csv files, each file includes information for one month.
 
 ```
-1. 202301-divvy-tripdata.csv
-2. 202302-divvy-tripdata.csv
-3. 202303-divvy-tripdata.csv
-4. 202304-divvy-tripdata.csv
-5. 202305-divvy-tripdata.csv
-6. 202306-divvy-tripdata.csv
-7. 202307-divvy-tripdata.csv
-8. 202308-divvy-tripdata.csv
-9. 202309-divvy-tripdata.csv
-10.202310-divvy-tripdata.csv
-11.202311-divvy-tripdata.csv
-12.202312-divvy-tripdata.csv
+1. 202306-divvy-tripdata.csv
+2. 202307-divvy-tripdata.csv
+3. 202308-divvy-tripdata.csv
+4. 202309-divvy-tripdata.csv
+5. 202310-divvy-tripdata.csv
+6. 202311-divvy-tripdata.csv
+7. 202312-divvy-tripdata.csv
+8. 202401-divvy-tripdata.csv
+9. 202402-divvy-tripdata.csv
+10.202403-divvy-tripdata.csv
+11.202404-divvy-tripdata.csv
+12.202405-divvy-tripdata.csv
 ```
 The data is well-structured with rows and columns, and each table maintains consistent column count and field names.
 ```
@@ -39,15 +39,37 @@ Index:
 'end_lng',                  # Trip end longitude
 'member_casual'             # Rider Types: Member or Casual
 ```
+
 ## PROCESS
 ## Data cleaning and Manipulation
 
-**Tool Chosen:** BigQuery
-Reason:
-- Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
-- In Contrast to Excel, SQL is fast and can handle large loads of data.
+### Microsoft Excel: initial data cleaning and Manipulation
+
+I downloaded 12 zip files and stored them in the appropriate directory and created a subfolder for the .csv files to maintain copies of the original datasets. Then, I launched Excel, imported each CSV file, made the following changes, and saved them as .xls files.
+
+Columns added:
+1. **'day_of_week'** : Calculated the day of week the ride started using the ```WEEKDAY``` function
+    - Format -> Cells -> Number(no decimals): 1,2,3,4,5,6,7
+    - Note: 1 represent Sunday and 7 represent Saturday
+   
+2. **'ride_date'** : Calculated the date of each ride started using the ```DATE``` function(```=DATE(YEAR(C2),MONTH(C2),DAY(C2))```)
+    - Format ->Cells-> Date YYYY-MM-DD
+
+3. **'ride_year'**: ``YEAR()``
+    - Format ->Cells-> General YYYY
+
+4. **'ride_month'**: ```MONTH()```
+
+
+5. **'start_time'**: ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
+
+6. **'end_time'**: ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
+
+
 
 ### Combining the Data
+- Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
+- In Contrast to Excel, SQL is fast and can handle large loads of data.
 
 SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Combining.sql);
 
