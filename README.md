@@ -51,22 +51,18 @@ Reason:
 
 SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Combining.sql);
 
-I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `2023_biketrips`.
+I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `biketrips`.
+
+**Observations:**  
+a) The **ride_id** field is the primary key.  
+b) There are 5,743278 rows and 13 columns.  
 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
 
-1. Let's check the **Schema** and **Detail**  of 2023_biketrips table. 
+1. Checking the number of **null value** in each field.
 
-<img width="365" alt="Screenshot" src="https://github.com/user-attachments/assets/caa7e8ac-9820-4abc-a417-3c5d111345ce">
-
-**Observations:**  
-a) The **ride_id** field is the primary key.  
-b) There are 5,719,877 rows and 13 columns.  
-
-2. Checking the number of **null value** in each field.
-
-![null_value](https://github.com/user-attachments/assets/bba855e7-d5c2-433b-84a1-2a53f7949117)
+![null_values](https://github.com/user-attachments/assets/9ef6b8de-212d-4338-a3b8-ffdd4506e2a5)
 
 **Verification:** 
 - missing values were identified in several columns. Null values in start_station_name, end_station_name, end_lat and end_lng fields will be removed during cleaning process. 
@@ -75,32 +71,33 @@ b) There are 5,719,877 rows and 13 columns.
 
 3. Checking for duplicate data (since the primary key has no null value)
 
-**Verification:** Dataset contains unique row only
+<img width="386" alt="duplicates" src="https://github.com/user-attachments/assets/fbf4e84b-b3c1-475d-b6ef-ba7a125c83b4">
+
+
+**Verification:** Dataset contains unique row onll???????
 
 4. Length Constraints: 'ride_id'
+
+<img width="310" alt="ride_id_length" src="https://github.com/user-attachments/assets/0af46ca5-bed7-4ca1-b18a-7583b1b9b3d9">
 
 **Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
 
 5. 'rideable_type'(Bike type): Classic, Docked, Electric
-<img width="386" alt="rideable_type" src="https://github.com/user-attachments/assets/b27521c6-5863-404d-9185-9a07a4c79a00">
+
+<img width="385" alt="rideable_type" src="https://github.com/user-attachments/assets/741650f9-6fe8-4313-8d41-99b9cbf440d3">
+
 
 6. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
    - To calculate the total trip duration for each trip, we will create a field called **ride_length** field.
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
-   <img width="511" alt="max_min_length" src="https://github.com/user-attachments/assets/ee8ebbe0-9265-46a8-869e-977d8cb02ffc">
+
+<img width="510" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/76a4ec04-60bf-4a25-ac48-a2595390908e">
+
    
    Note that the maximum duration is 98489.07 mins (approximately equal to 68.36 days), and the minimum duration is less than 0.
 
    - According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/360033484791-What-if-I-keep-a-bike-out-too-long#:~:text=Day%20Pass%20holders%3A%20unlimited%20number,included%20in%20the%20membership%20price.), failing to return a bike within 24-hours may result in a $250 fee for loss or theft.
    - We will exclude trips with a ride_length greater 24 hours and less than 1 minute.
-
-   
-
-   
-  
-day_of_week, and month fields will be created during the **Cleaning process**
-
-
 
 
 
