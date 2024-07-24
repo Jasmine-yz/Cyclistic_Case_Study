@@ -69,25 +69,25 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 - additionally, The start_station_id and end_station_id fields will be deleted from our analysis as they do not contribute relevant information. 
 - Note: ##############
 
-3. Checking for duplicate data (since the primary key has no null value)
+2. Checking for duplicate data (since the primary key has no null value)
 
 <img width="386" alt="duplicates" src="https://github.com/user-attachments/assets/fbf4e84b-b3c1-475d-b6ef-ba7a125c83b4">
 
 
 **Verification:** Dataset contains unique row onll???????
 
-4. Length Constraints: 'ride_id'
+3. Length Constraints: 'ride_id'
 
 <img width="310" alt="ride_id_length" src="https://github.com/user-attachments/assets/0af46ca5-bed7-4ca1-b18a-7583b1b9b3d9">
 
 **Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
 
-5. 'rideable_type'(Bike type): Classic, Docked, Electric
+4. 'rideable_type'(Bike type): Classic, Docked, Electric
 
 <img width="385" alt="rideable_type" src="https://github.com/user-attachments/assets/741650f9-6fe8-4313-8d41-99b9cbf440d3">
 
 
-6. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
+5. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
    - To calculate the total trip duration for each trip, we will create a field called **ride_length** field.
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
 
