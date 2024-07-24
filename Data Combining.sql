@@ -1,29 +1,27 @@
-
-
-CREATE TABLE `project-1-429715.gda_capstone_1.2023_biketrips` AS (
+CREATE TABLE `project-1-429715.divvy_tripdata.biketrips` AS (
   
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_01`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_06_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_02`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_07_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_03`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_08_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_04`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_09_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_05`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_10_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_06`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_11_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_07`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2023_12_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_08`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2024_01_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_09`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2024_02_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_10`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2024_03_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_11`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2024_04_tripdata`
   UNION ALL
-  SELECT * FROM `project-1-429715.gda_capstone_1.2023_12`
+  SELECT * FROM `project-1-429715.divvy_tripdata.2024_05_tripdata`
 
 );
