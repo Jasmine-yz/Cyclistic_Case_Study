@@ -89,32 +89,24 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 - additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
 - Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
 
-
-
-
-
-
-
 2. Checking for duplicate data (since the primary key has no null value)
 
 <img width="386" alt="duplicates" src="https://github.com/user-attachments/assets/fbf4e84b-b3c1-475d-b6ef-ba7a125c83b4">
 
-
-**Verification:** Dataset contains unique row onll???????
+**Verification:** Note that some duplicate IDs are in scientific notation, Let's verify the extent of this occurrence.
 
 3. Length Constraints: 'ride_id'
 
 <img width="310" alt="ride_id_length" src="https://github.com/user-attachments/assets/0af46ca5-bed7-4ca1-b18a-7583b1b9b3d9">
 
-**Verification:** The length of all ride_id values is consistently 16 characters,indicating that no cleanup is required.
+**Verification:** Most ride_id values are consistently 16 characters long, with only 3865 rows containing any other length. 
 
 4. 'rideable_type'(Bike type): Classic, Docked, Electric
 
 <img width="385" alt="rideable_type" src="https://github.com/user-attachments/assets/741650f9-6fe8-4313-8d41-99b9cbf440d3">
 
-
 5. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
-   - To calculate the total trip duration for each trip, we will create a field called **ride_length** field.
+
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
 
 <img width="510" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/76a4ec04-60bf-4a25-ac48-a2595390908e">
@@ -130,7 +122,7 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
-- We added ride_length, day_of_week, and month fields to the dataset.
+- We added ride_length, 
 - All the missing values have removed
 - Trips with duration longer than a day or less than a minute were deteted.
 - A total 1,476,445 rows were removed during this process.
