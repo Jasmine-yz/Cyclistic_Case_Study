@@ -47,25 +47,27 @@ Index:
 
 I downloaded 12 zip files and stored them in the appropriate directory and created a subfolder for the .csv files to maintain copies of the original datasets. Then, I launched Excel, imported each CSV file, made the following changes, and saved them as .xls files.
 
-Columns added:
-1. **'day_of_week'** : Calculated the day of week the ride started using the ```WEEKDAY``` function
+Columns added: 
+1. **'day_of_week'** : Calculates the day of the week each ride started using the ```WEEKDAY``` function
     - Format -> Cells -> Number(no decimals): 1,2,3,4,5,6,7
     - Note: 1 represent Sunday and 7 represent Saturday
    
-2. **'ride_date'** : Calculated the date of each ride started using the ```DATE``` function(```=DATE(YEAR(C2),MONTH(C2),DAY(C2))```)
+2. **'ride_date'** : Calculates the date of each ride started using the ```DATE``` function(```=DATE(YEAR(C2),MONTH(C2),DAY(C2))```)
     - Format ->Cells-> Date YYYY-MM-DD
 
 3. **'ride_year'**: ``YEAR()``
     - Format ->Cells-> General YYYY
 
 4. **'ride_month'**: ```MONTH()```
+    - Format ->Cells-> Number (Jan = 1)
 
+5. **'start_time'**: Using 'started_at' column to calculate the the start time ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
+    - Format > Cells > Time > HH:MM:SS (37:30:55)
 
-5. **'start_time'**: ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
+6. **'end_time'**: Using 'ended_at' column to calculate the the end time ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
+    - Format > Cells > Time > HH:MM:SS (37:30:55)
 
-6. **'end_time'**: ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
-
-
+**Note:** The 'ride_length' column is supposed to be added at this stage, but encountered some formatting issues, it will be added using an sql query.   
 
 ### Combining the Data
 - Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
