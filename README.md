@@ -69,17 +69,13 @@ Columns added:
 
 **Note:** The 'ride_length' column is supposed to be added at this stage, but encountered some formatting issues, it will be added using an sql query.   
 
+For the next step, we will use **BigQuery** for further data cleaning and manipulation. Unlike Excel, which has limitations on the number of rows and columns in a single worksheet and can become slow when processing large amounts of data or  performing complex calculations, SQL is fast and can handle large loads of data.
+
 ### Combining the Data
-- Excel has limited rows and columns in a single worksheet,it can also become slow when processing large amounts of data, especially when performing complex calculations or data analysis.
-- In Contrast to Excel, SQL is fast and can handle large loads of data.
 
 SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Combining.sql);
 
-I created a Google Cloud Storage bucket to store uploaded 12 CSV files, then established a project in BigQuery and uploaded these files as datasets. Subsequently,I merged the CSV files into a single table named `biketrips`.
-
-**Observations:**  
-a) The **ride_id** field is the primary key.  
-b) There are 5,743278 rows and 13 columns.  
+I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then established a project in BigQuery and uploaded these files as datasets. Afterwards, I merged the CSV files into a single table named `biketrips`, resulting in a combined table with a total of 5,743,278 rows.
 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
@@ -89,9 +85,15 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 ![null_values](https://github.com/user-attachments/assets/9ef6b8de-212d-4338-a3b8-ffdd4506e2a5)
 
 **Verification:** 
-- missing values were identified in several columns. Null values in start_station_name, end_station_name, end_lat and end_lng fields will be removed during cleaning process. 
-- additionally, The start_station_id and end_station_id fields will be deleted from our analysis as they do not contribute relevant information. 
-- Note: ##############
+- missing values were identified in several columns. Null values in 'start_station_name', 'end_station_name', 'end_lat' and 'end_lng' fields will be removed during cleaning process. 
+- additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
+- Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
+
+
+
+
+
+
 
 2. Checking for duplicate data (since the primary key has no null value)
 
