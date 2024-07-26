@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS `project-1-429715.cyclistic_tripdata.biketrips_cleaned_second`;
 
+
 CREATE TABLE `project-1-429715.cyclistic_tripdata.biketrips_cleaned_second` AS(
 
 SELECT
@@ -7,7 +8,7 @@ SELECT
     rideable_type,
     started_at,
     ended_at,
-    TIMESTAMP_DIFF(ended_at,started_at,SECOND)AS ride_length,
+    TIMESTAMP_DIFF(ended_at,started_at,MINUTE)AS ride_length,
     CASE EXTRACT(DAYOFWEEK FROM started_at)
         WHEN 1 THEN 'Sunday'
         WHEN 2 THEN 'Monday'
@@ -49,10 +50,9 @@ WHERE
     AND end_lat IS NOT NULL
     AND end_lng IS NOT NULL
     AND LENGTH(ride_id) = 16
-    AND TIMESTAMP_DIFF(ended_at,started_at,SECOND) > 60
-    AND TIMESTAMP_DIFF(ended_at,started_at,SECOND) < 86400
+    AND TIMESTAMP_DIFF(ended_at,started_at,MINUTE) > 1
+    AND TIMESTAMP_DIFF(ended_at,started_at,MINUTE) < 1440
     
 );
-
 
 
