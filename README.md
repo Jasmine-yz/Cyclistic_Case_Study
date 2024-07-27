@@ -49,7 +49,7 @@ We will use **BigQuery** for data cleaning and manipulation due to ites efficien
 
 SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Combining.sql);
 
-I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then established a project in BigQuery and uploaded these files as datasets. Afterwards, I merged the CSV files into a single table named `biketrips`, resulting in a combined table with a total of 5,743,278 rows.
+I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then established a project in BigQuery and uploaded these files as datasets. Afterwards, I merged the CSV files into a single table named `2023_biketrips`, resulting in a combined table with a total of **5,719,877** rows.
 
 ### Data Exploration
 SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
@@ -96,10 +96,14 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
-- We added ride_length, 
-- All the missing values have removed
+- 5 columns were added:
+   - ride_length (in minute)
+   - day_of_week
+   - ride_date
+   - start_time
+   - end_time
 - Trips with duration longer than a day or less than a minute were deteted.
-- A total 1,476,445 rows were removed during this process.
+
 
 
 
