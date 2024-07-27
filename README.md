@@ -56,36 +56,36 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 
 1. Checking the number of **null value** in each field.
 
-![null_values](https://github.com/user-attachments/assets/9ef6b8de-212d-4338-a3b8-ffdd4506e2a5)
+![null_value](https://github.com/user-attachments/assets/18bc8d5a-1dfe-4b44-836a-6baa56b888a5)
 
 **Verification:** 
 - missing values were identified in several columns. Null values in 'start_station_name', 'end_station_name', 'end_lat' and 'end_lng' fields will be removed during cleaning process. 
 - additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
 - Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
 
-2. Checking for duplicate data (since the primary key has no null value)
 
-<img width="386" alt="duplicates" src="https://github.com/user-attachments/assets/fbf4e84b-b3c1-475d-b6ef-ba7a125c83b4">
+2. Checking for duplicate data (since the unique key ride_id has no null value)
 
-**Verification:** Note that some duplicate IDs are in scientific notation, Let's verify the extent of this occurrence.
+**Verification:** There is no duplicates.
+
 
 3. Length Constraints: 'ride_id'
 
-<img width="310" alt="ride_id_length" src="https://github.com/user-attachments/assets/0af46ca5-bed7-4ca1-b18a-7583b1b9b3d9">
+<img width="312" alt="ride_id_length" src="https://github.com/user-attachments/assets/f01afe35-3045-447c-8b77-c563f5d39b4d">
 
-**Verification:** Most ride_id values are consistently 16 characters long, with only 3865 rows containing any other length. 
+**Verification:**  ride_id values are consistently 16 characters long.
+
 
 4. 'rideable_type'(Bike type): Classic, Docked, Electric
 
 <img width="385" alt="rideable_type" src="https://github.com/user-attachments/assets/741650f9-6fe8-4313-8d41-99b9cbf440d3">
 
+
 5. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
 
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
+<img width="511" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/7e34b73b-fc84-44c5-b9aa-8eacacc19cac">
 
-<img width="510" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/76a4ec04-60bf-4a25-ac48-a2595390908e">
-
-   
    Note that the maximum duration is 98489.07 mins (approximately equal to 68.36 days), and the minimum duration is less than 0.
 
    - According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/360033484791-What-if-I-keep-a-bike-out-too-long#:~:text=Day%20Pass%20holders%3A%20unlimited%20number,included%20in%20the%20membership%20price.), failing to return a bike within 24-hours may result in a $250 fee for loss or theft.
