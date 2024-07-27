@@ -43,33 +43,7 @@ Index:
 ## PROCESS
 ## Data cleaning and Manipulation
 
-### Microsoft Excel: initial data cleaning and Manipulation
-
-I downloaded 12 zip files and stored them in the appropriate directory and created a subfolder for the .csv files to maintain copies of the original datasets. Then, I launched Excel, imported each CSV file, made the following changes, and saved them as .xls files.
-
-Columns added: 
-1. **'day_of_week'** : Calculates the day of the week each ride started using the ```WEEKDAY``` function
-    - Format -> Cells -> Number(no decimals): 1,2,3,4,5,6,7
-    - Note: 1 represent Sunday and 7 represent Saturday
-   
-2. **'ride_date'** : Calculates the date of each ride started using the ```DATE``` function(```=DATE(YEAR(C2),MONTH(C2),DAY(C2))```)
-    - Format ->Cells-> Date YYYY-MM-DD
-
-3. **'ride_year'**: ``YEAR()``
-    - Format ->Cells-> General YYYY
-
-4. **'ride_month'**: ```MONTH()```
-    - Format ->Cells-> Number (Jan = 1)
-
-5. **'start_time'**: Using 'started_at' column to calculate the the start time ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
-    - Format > Cells > Time > HH:MM:SS (37:30:55)
-
-6. **'end_time'**: Using 'ended_at' column to calculate the the end time ```=TIME(HOUR(C2),MINUTE(C2),SECOND(C2))```
-    - Format > Cells > Time > HH:MM:SS (37:30:55)
-
-**Note:** The 'ride_length' column is supposed to be added at this stage, but encountered some formatting issues, it will be added using an sql query.   
-
-For the next step, we will use **BigQuery** for further data cleaning and manipulation. Unlike Excel, which has limitations on the number of rows and columns in a single worksheet and can become slow when processing large amounts of data or  performing complex calculations, SQL is fast and can handle large loads of data.
+We will use **BigQuery** for data cleaning and manipulation. Unlike Excel, which has limitations on the number of rows and columns in a single worksheet and can become slow when processing large amounts of data or  performing complex calculations, SQL is fast and can handle large loads of data.
 
 ### Combining the Data
 
