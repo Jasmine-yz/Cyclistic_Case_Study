@@ -1,4 +1,4 @@
-CREATE TABLE `project-1-429715.cyclistic_tripdata._2023biketrips` AS (
+CREATE TABLE `project-1-429715.cyclistic_tripdata.2023biketrips` AS (
   
   SELECT * FROM `project-1-429715.cyclistic_tripdata.2023_01_biketrips`
   UNION ALL
