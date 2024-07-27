@@ -43,7 +43,7 @@ Index:
 ## PROCESS
 ## Data cleaning and Manipulation
 
-We will use **BigQuery** for data cleaning and manipulation. Unlike Excel, which has limitations on the number of rows and columns in a single worksheet and can become slow when processing large amounts of data or  performing complex calculations, SQL is fast and can handle large loads of data.
+We will use **BigQuery** for data cleaning and manipulation due to ites efficiency in handling large datasets. SQL provides rapid processing capabilities, which is important for managing and analyzing substantial volumes of data. In contrast, Excel has limitations on the number of rows and columns in a single worksheet and can become slow when dealing with large amounts of data or  performing complex calculations.
 
 ### Combining the Data
 
