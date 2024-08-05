@@ -1,6 +1,12 @@
 # Cyclistic_Case_Study
+
+## The Scenario
+In this scenario, you are a junior data analyst working on the marketing analyst team at Cyclistic,a bike-share company in Chicago. Cyclistic allows customers pick up a bike and drop it off at any docking station. Customers who purchase annual memberships are Cyclistic members.Customers who purchase single-ride or full-day passes are referred to as casual riders.
+
+The marketing director believes that maximizing the number of annual memberships is key to the company's future success because annual memberships are more profitable than single trips and day passes. Before launching a new marketing strategy to covert casual riders into annual members, your team needs to first understand the differences in how casual riders and annual members use Cyclistic bikes. 
+
 ## ASK
-### Business Task: How do annual members and casual riders use Cyclistic bikes differently?
+### Business Task: Analyze historical bikes trip to identify trends and Understand how casual riders and annual members use bicycles differently.
 
 ## PREPARE
 ### Data Sources
