@@ -1,4 +1,21 @@
+# Cyclistic Case Study  
+In this case study, I will undertake a real-world task as a junior data analyst within the marketing analyst team of the fictional company, Cyclistic. To address key business questions, I will follow the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.  
 
+## Scenario  
+Cyclistic is a bike-sharing company in Chicago, with two types of customers.  Members purchase annual memberships. While casual riders opt for single-ride or full-day passes. Finance analysts have determined that annual members are significantly more profitable than casual riders.  Moreno, the marketing director, believes that increasing the number of annual memberships is crucial for the company's success. she has set a clear goal: Design a marketing strategy aimed at converting casual riders into annual members. 
+
+To develop an effective marketing strategy to chieve this conversion, the team needs to answer the following questions: 
+
+1. How do annual members and casual riders use Cyclistic bikes dierently?
+2. Why would casual riders buy Cyclistic annual memberships?
+3. How can Cyclistic use digital media to influence casual riders to become members?
+
+## ASK
+Moreno has tasked me with addressing the first questions: How do annual members and casual riders use Cyclistic bikes dierently?
+
+
+### Business Task: 
+Analyze historical bikes trip to identify usage patterns and understand the difference in how casual riders and annual members utilize Cyclistic bikes.
 
 
 ## PREPARE
