@@ -16,7 +16,7 @@ Three questions will guide the future marketing programs:
 
 Moreno has tasked me with addressing the first questions: How do annual members and casual riders use Cyclistic bikes dierently?  
 
-### Key stakeholders  
+### Key stakeholders: 
 1. Lily Moreno: The director of marketing and responsible for the development of campaigns and initiatives to promote the bike-share program.
 2. Cyclistic executive team: The team will decide whether to approve the recommended marketing program.
 3. Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
