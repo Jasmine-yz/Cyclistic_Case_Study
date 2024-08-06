@@ -1,7 +1,7 @@
 
 
 
---1. Checking the number of null value in each field.
+--1. Identifying Missing Values.
 
 SELECT
   SUM(CASE WHEN ride_id IS NULL THEN 1 ELSE 0 END) AS ride_id,
@@ -20,7 +20,7 @@ SELECT
   
 FROM `project-1-429715.cyclistic_tripdata.2023biketrips`;
 
---2.Checking for duplicate data (0 duplicate)
+--2.Identifying Duplicate Entries (0 duplicate)
 
 SELECT 
   ride_id,
@@ -29,7 +29,9 @@ FROM `project-1-429715.cyclistic_tripdata.2023biketrips`
 GROUP BY ride_id 
 HAVING COUNT(*) > 1;
 
---3.Length Constraints: 'ride_id'
+--3.Identifying Invalid Entries
+
+a) Length Constraints: 'ride_id'
 
 SELECT 
     LENGTH(ride_id) AS ride_id_length,
@@ -38,7 +40,7 @@ FROM `project-1-429715.cyclistic_tripdata.2023biketrips`
 GROUP BY LENGTH(ride_id)
 ORDER BY ride_id_length;
 
---4. Total trips for each unique 'rideable_type'
+b) unique 'rideable_type'
 
 SELECT
   DISTINCT rideable_type,
@@ -46,7 +48,15 @@ SELECT
 FROM `project-1-429715.cyclistic_tripdata.2023biketrips`
 GROUP BY rideable_type;
 
---5. Check the MAXUM and MINIMUM  ride_length for each rideable_type.
+c) 
+SELECT
+  DISTINCT member_casual,
+  COUNT(*) AS num_of_trips,
+FROM `project-1-429715.cyclistic_tripdata.2023biketrips` 
+GROUP BY member_casual;
+  
+  
+  Check the MAXUM and MINIMUM  ride_length for each rideable_type.
 
 SELECT
   rideable_type,
