@@ -56,7 +56,8 @@ FROM `2023biketrips`
 GROUP BY member_casual;
   
   
-d) Check the MAXUM and MINIMUM  ride_length for each rideable_type.
+--4. Identifying Outliers
+Check the MAXUM and MINIMUM  ride_length for each rideable_type.
 
 SELECT
   rideable_type,
