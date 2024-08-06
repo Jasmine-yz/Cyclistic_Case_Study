@@ -74,10 +74,10 @@ SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/b
 
 I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then established a project in BigQuery and uploaded these files as datasets. Afterwards, I merged the CSV files into a single table named `2023_biketrips`, resulting in a combined table with a total of **5,719,877** rows.
 
-### Data Exploration
-SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
+### Data Inspection
+SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
 
-1. Checking the number of **null value** in each field.
+1. **Identifying Missing Values**
 
 ![null_value](https://github.com/user-attachments/assets/18bc8d5a-1dfe-4b44-836a-6baa56b888a5)
 
@@ -87,24 +87,28 @@ SQL Query: [Data Exploration](https://github.com/Jasmine-yz/Cyclistic_Case_Study
 - Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
 
 
-2. Checking for duplicate data (since the unique key ride_id has no null value)
+2. **Identifying Duplicate Entries**  (since the unique key ride_id has no null value)
 
 **Verification:** There is no duplicates.
 
 
-3. Length Constraints: 'ride_id'
+3. **Identifying Invalid Entries**
+
+a) Length Constraints: 'ride_id'
 
 <img width="312" alt="ride_id_length" src="https://github.com/user-attachments/assets/f01afe35-3045-447c-8b77-c563f5d39b4d">
 
 **Verification:**  ride_id values are consistently 16 characters long.
 
-
-4. 'rideable_type'(Bike type): Classic, Docked, Electric
+b) 'rideable_type'(Bike type): Classic, Docked, Electric
 
 <img width="385" alt="rideable_type" src="https://github.com/user-attachments/assets/741650f9-6fe8-4313-8d41-99b9cbf440d3">
 
+c) 'member_casual': 2 unique values( member , casual )  
 
-5. 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
+![Screenshot 2024-08-06 at 17 22 36](https://github.com/user-attachments/assets/cf834fea-7a7c-44a8-8774-56e7a494b432)
+
+d) 'started_at' and 'ended_at' fields indicates the start time and end times of the trip in YYYY-MM-DD HH:MI:SS UTC format.
 
    - Check the MAXUM and MINIMUM ride_length for each rideable_type.
 <img width="511" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/7e34b73b-fc84-44c5-b9aa-8eacacc19cac">
