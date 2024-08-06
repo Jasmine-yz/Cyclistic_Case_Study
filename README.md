@@ -108,14 +108,17 @@ c) 'member_casual': 2 unique values( member , casual )
 
 ![Screenshot 2024-08-06 at 17 22 36](https://github.com/user-attachments/assets/cf834fea-7a7c-44a8-8774-56e7a494b432)
 
-4. **Identifying Outliers
+4. **Identifying Outliers**
 
 - Check the MAXUM and MINIMUM ride_length for each rideable_type.
 <img width="511" alt="max_min_ride_length" src="https://github.com/user-attachments/assets/7e34b73b-fc84-44c5-b9aa-8eacacc19cac">
 
 Note that the maximum duration is 98489.07 mins (approximately equal to 68.36 days), and the minimum duration is less than 0.
 
-- According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/360033484791-What-if-I-keep-a-bike-out-too-long#:~:text=Day%20Pass%20holders%3A%20unlimited%20number,included%20in%20the%20membership%20price.), failing to return a bike within 24-hours may result in a $250 fee for loss or theft.
+- Count the number of trips lasting longer than a day (Total of rows = 6417)
+- Count the number of trips lasting less than a minute (Total of rows = 149615) 
+
+According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/360033484791-What-if-I-keep-a-bike-out-too-long#:~:text=Day%20Pass%20holders%3A%20unlimited%20number,included%20in%20the%20membership%20price.), failing to return a bike within 24-hours may result in a $250 fee for loss or theft.
 - We will exclude trips with a ride_length greater 24 hours and less than 1 minute.
 
 
