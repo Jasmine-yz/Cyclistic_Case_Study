@@ -1,4 +1,5 @@
 # Cyclistic Case Study  
+
 In this case study, I will undertake a real-world task as a junior data analyst within the marketing analyst team of the fictional company, Cyclistic. To address key business questions, I will follow the data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.  
 
 ## Scenario  
@@ -7,6 +8,7 @@ Cyclistic is a bike-sharing company based in Chicago, with two types of customer
 
 ## ASK
 ### Define the problems:  
+
 Three questions will guide the future marketing programs:  
 1. How do annual members and casual riders use Cyclistic bikes dierently?
 2. Why would casual riders buy Cyclistic annual memberships?
@@ -14,14 +16,14 @@ Three questions will guide the future marketing programs:
 
 Moreno has tasked me with addressing the first questions: How do annual members and casual riders use Cyclistic bikes dierently?  
 
-### Key stake holders  
+### Key stakeholders  
 1. Lily Moreno: The director of marketing and responsible for the development of campaigns and initiatives to promote the bike-share program.
 2. Cyclistic executive team: The team will decide whether to approve the recommended marketing program.
 3. Cyclistic marketing analytics team: A team of data analysts who are responsible for collecting, analyzing, and reporting data that helps guide Cyclistic marketing strategy.
 
-
 ### Business Task: 
 Analyze historical bikes trip to identify usage patterns and understand the difference in how casual riders and annual members utilize Cyclistic bikes.
+
 
 ## PREPARE
 ### Data Sources
