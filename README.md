@@ -126,12 +126,14 @@ According to the [divvy website](https://help.divvybikes.com/hc/en-us/articles/3
 ### Data Cleaning
 SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Cleaning.sql)
 
-- 3 columns were added:
+1. 3 columns were added:
    - ride_length (in minute)
    - day_of_week
    - ride_date
      
-- Trips with duration longer than a day or less than a minute were deteted.
+2. Trips with duration longer than a day or less than a minute were deteted.
+3. All the rows having missing values are deleted.
+4. 1,551,156 rows are removed in this step.
 
 
 
