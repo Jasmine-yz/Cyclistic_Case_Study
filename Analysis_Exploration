@@ -1,1 +1,9 @@
 
+
+SELECT
+  COUNT(ride_id) AS Total_trips,
+  SUM(CASE WHEN member_casual = 'member' THEN 1 ELSE 0 END) AS Total_member_trips,
+  SUM(CASE WHEN member_casual = 'casual' THEN 1 ELSE 0 END) AS Total_casual_trips,
+  ROUND(SUM(CASE WHEN member_casual = 'member' THEN 1 ELSE 0 END) * 100 / COUNT(ride_id), 2) AS MemberPercentage,
+  ROUND(SUM(CASE WHEN member_casual = 'casual' THEN 1 ELSE 0 END) * 100/ COUNT(ride_id), 2) AS CasualPercentage
+FROM `2023biketrips`;
