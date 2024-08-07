@@ -77,7 +77,7 @@ I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then est
 ### Data Inspection
 SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
 
-1. **Identifying Missing Values**
+1. Identifying Missing Values
 
 ![null_value](https://github.com/user-attachments/assets/18bc8d5a-1dfe-4b44-836a-6baa56b888a5)
 
@@ -87,12 +87,12 @@ SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/
 - Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
 
 
-2. **Identifying Duplicate Entries**  (since the unique key ride_id has no null value)
+2. Identifying Duplicate Entries (since the unique key ride_id has no null value)
 
 **Verification:** There is no duplicates.
 
 
-3. **Identifying Invalid Entries**
+3. Identifying Invalid Entries
 
 a) Length Constraints: 'ride_id'
 
@@ -134,6 +134,43 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 2. Trips with duration longer than a day or less than a minute were deteted.
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
+
+## Analysis | Exploration 
+
+Total trips: Members vs Casual,  Proportion of each user type
+
+![Screenshot 2024-08-06 at 21 39 36](https://github.com/user-attachments/assets/15f7080d-65f2-45fd-a8e9-0091426a2ad7)
+
+
+
+
+
+Average ride lengths: Members vs Casual
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
