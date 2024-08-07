@@ -143,12 +143,12 @@ Total trips: Members vs Casual,  Proportion of each user type
 
 
 
-
-
 Average ride lengths: Members vs Casual
 
+![AvgRideLength](https://github.com/user-attachments/assets/20bbe1b0-b08a-4a69-8a75-b206eda51012)
 
 
+The most frequent riding day:
 
 
 
