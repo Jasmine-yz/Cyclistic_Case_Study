@@ -139,17 +139,24 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 
 Total trips: Members vs Casual,  Proportion of each user type
 
-![Screenshot 2024-08-06 at 21 39 36](https://github.com/user-attachments/assets/15f7080d-65f2-45fd-a8e9-0091426a2ad7)
+<img width="682" alt="Total Trips" src="https://github.com/user-attachments/assets/32ac0341-b4fb-4346-8b8c-549ee8621475">
 
 
+ride length distribution(in minute): Members vs Casual
 
-Average ride lengths: Members vs Casual
-
-![AvgRideLength](https://github.com/user-attachments/assets/20bbe1b0-b08a-4a69-8a75-b206eda51012)
+<img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">
 
 
 The most frequent riding day:
 
+<img width="586" alt="most busiest day" src="https://github.com/user-attachments/assets/d6421651-7c19-4716-bea2-c547150b0b41">
+
+
+The most frequent riding hours:
+
+
+
+The most popular start sation:
 
 
 
