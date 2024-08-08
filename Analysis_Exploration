@@ -1,4 +1,4 @@
-
+--Total trips: Members vs Casual, Proportion of each user type
 
 SELECT
   COUNT(ride_id) AS Total_trips,
@@ -7,3 +7,41 @@ SELECT
   ROUND(SUM(CASE WHEN member_casual = 'member' THEN 1 ELSE 0 END) * 100 / COUNT(ride_id), 2) AS MemberPercentage,
   ROUND(SUM(CASE WHEN member_casual = 'casual' THEN 1 ELSE 0 END) * 100/ COUNT(ride_id), 2) AS CasualPercentage
 FROM `2023biketrips`;
+
+--Average ride lengths: Members vs Casual
+
+SELECT  
+ AVG(ride_length) AS AvgRidelength_Total,
+ AVG(CASE WHEN member_casual = 'member' THEN ride_length END) AS Avg_RideLength_Member,
+ AVG(CASE WHEN member_casual = 'casual' THEN ride_length END) AS Avg_RideLength_Casual,
+
+FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull` 
+
+
+--The most frequent riding day:
+
+WITH RideCounts AS(
+  SELECT 
+    member_casual,
+    day_of_week,
+    COUNT(*) AS ride_count,
+  FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+  GROUP BY member_casual,day_of_week
+),
+
+RankedDays AS (
+    SELECT
+        member_casual,
+        day_of_week,
+        ride_count,
+        ROW_NUMBER() OVER (PARTITION BY member_casual ORDER BY ride_count DESC) AS Row_number
+    FROM
+        RideCounts
+)
+
+SELECT
+  member_casual,
+  day_of_week,
+  ride_count
+FROM RankedDays
+WHERE ROW_NUMBER = 1
