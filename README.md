@@ -149,15 +149,20 @@ ride length distribution(in minute): Members vs Casual
 
 The most frequent riding day:
 
-<img width="586" alt="most busiest day" src="https://github.com/user-attachments/assets/d6421651-7c19-4716-bea2-c547150b0b41">
+<img width="583" alt="the busiest day" src="https://github.com/user-attachments/assets/9b4398b7-96a8-4674-9820-3dd826917f36">
+
+The most frequent riding month:
+
+<img width="508" alt="the busiest month" src="https://github.com/user-attachments/assets/1eec1b68-3a4e-4949-addd-3f93b09ec177">
 
 
 The most frequent riding hours:
 
-
+<img width="507" alt="the busiest hour" src="https://github.com/user-attachments/assets/724e7cf4-4a74-42d9-9bce-51a023f5aeec">
 
 The most popular start sation:
 
+<img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
 
 
