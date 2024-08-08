@@ -18,6 +18,7 @@ SELECT
 FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull` 
 
 
+
 --The most frequent riding day:
 
 WITH RideCounts AS(
@@ -46,9 +47,10 @@ SELECT
 FROM RankedDays
 WHERE ROW_NUMBER = 1
 
+
 --ride length distribution(in minute): Members vs Casual
 
-WITH Quantiles AS (
+```WITH Quantiles AS (
     SELECT
         member_casual,
         APPROX_QUANTILES(ride_length, 4) AS quantiles
@@ -83,5 +85,55 @@ FROM
 JOIN
     Quantiles q
 ON
-    a.member_casual = q.member_casual
+    a.member_casual = q.member_casual```
 
+
+
+
+
+
+
+
+
+--Count of Rides and Total Ride Duration by Rideable Type
+```
+SELECT
+  member_casual,
+  rideable_type,
+  COUNT(*) AS rides_count,
+  ROUND(AVG(ride_length),2) AS avg_ride_length_mins
+
+FROM`project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+GROUP BY member_casual, rideable_type
+ORDER BY rides_count DESC```
+
+
+
+
+--Rides by hour and day
+```WITH RideCounts AS(
+  SELECT
+    member_casual,
+    day_of_week,
+    EXTRACT(HOUR FROM started_at) AS hour,
+    COUNT(*) AS ride_count
+  FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+  GROUP BY member_casual,day_of_week,Hour
+),
+RankedHour AS(
+  SELECT  
+    member_casual,
+    day_of_week,
+    hour,
+    ride_count,
+    ROW_NUMBER() OVER(PARTITION BY member_casual ORDER BY ride_count DESC) AS num_rank
+  FROM RideCounts
+)
+SELECT
+  num_rank,
+  member_casual,
+  day_of_week,
+  hour,
+  ride_count
+FROM RankedHour
+ORDER BY num_rank```
