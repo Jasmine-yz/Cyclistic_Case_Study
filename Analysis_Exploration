@@ -45,3 +45,43 @@ SELECT
   ride_count
 FROM RankedDays
 WHERE ROW_NUMBER = 1
+
+--ride length distribution(in minute): Members vs Casual
+
+WITH Quantiles AS (
+    SELECT
+        member_casual,
+        APPROX_QUANTILES(ride_length, 4) AS quantiles
+    FROM
+        `2023biketrips`
+    GROUP BY
+        member_casual
+),
+
+Aggregates AS (
+    SELECT
+        member_casual,
+        AVG(ride_length) AS Avg_RideLength,
+        MAX(ride_length) AS Max_RideLength,
+        MIN(ride_length) AS Min_RideLength
+    FROM
+        `2023biketrips`
+    GROUP BY
+        member_casual
+)
+
+SELECT
+    a.member_casual,
+    a.Avg_RideLength,
+    a.Max_RideLength,
+    a.Min_RideLength,
+    q.quantiles[OFFSET(1)] AS Percentile_25,
+    q.quantiles[OFFSET(2)] AS Median,
+    q.quantiles[OFFSET(3)] AS Percentile_75
+FROM
+    Aggregates a
+JOIN
+    Quantiles q
+ON
+    a.member_casual = q.member_casual
+
