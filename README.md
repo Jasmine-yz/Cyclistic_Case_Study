@@ -137,6 +137,8 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 
 ## Analysis | Exploration 
 
+In this phrase, we will use SQL to perform descriptive statistics, which help us explore the data and understand the distribution of values.
+
 Total trips: Members vs Casual,  Proportion of each user type
 
 <img width="682" alt="Total Trips" src="https://github.com/user-attachments/assets/32ac0341-b4fb-4346-8b8c-549ee8621475">
@@ -146,25 +148,28 @@ ride length distribution(in minute): Members vs Casual
 
 <img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">
 
+Rides counts and duration by bike types
 
-The most frequent riding day:
+<img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">
 
-<img width="583" alt="the busiest day" src="https://github.com/user-attachments/assets/9b4398b7-96a8-4674-9820-3dd826917f36">
 
 The most frequent riding month:
 
-<img width="508" alt="the busiest month" src="https://github.com/user-attachments/assets/1eec1b68-3a4e-4949-addd-3f93b09ec177">
+<img width="574" alt="Rides by month" src="https://github.com/user-attachments/assets/c74af2d5-4a62-4943-b448-1012edb2c6ae">
 
 
-The most frequent riding hours:
+The most frequent riding day and hours:
 
-<img width="507" alt="the busiest hour" src="https://github.com/user-attachments/assets/724e7cf4-4a74-42d9-9bce-51a023f5aeec">
+<img width="831" alt="Rides by day and hour" src="https://github.com/user-attachments/assets/deb44e38-2536-4938-9000-0184d10ddce6">
+
 
 The most popular start sation:
 
 <img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
+The most popular end station:
 
+![Picture2](https://github.com/user-attachments/assets/cd045153-c559-4dfb-b90a-05fc7dcd0efd)
 
 
 
