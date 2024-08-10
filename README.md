@@ -150,8 +150,6 @@ Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.
 
 <img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">  
 
-Surprisely, we found the the duration if casual rider is much longer than annual members. 75% of duration below 24 minutes. 
-
 Interestingly, our analysis reveals that casual riders have significantly longer trip durations compared to annual members. Specifically, 75% of casual rider trips last less than 24 minutes, 75% of member rider trips last less than 14 mins.
 
 - Rides counts and duration by bike types
@@ -160,11 +158,11 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 
 Classic bike is the most popular bike type choice for both annual members and casual riders. Meanwhile, docked bikes have the longest trip durations but the fewest ride counts.
 
-
 - The most frequent riding month:
 
 <img width="574" alt="Rides by month" src="https://github.com/user-attachments/assets/c74af2d5-4a62-4943-b448-1012edb2c6ae">  
 
+The summer season has the most ride trips
 
 - The most frequent riding day and hours:
 
