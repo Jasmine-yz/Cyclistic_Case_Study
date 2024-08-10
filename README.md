@@ -135,35 +135,43 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
 
-## Analysis | Exploration 
+## Analysis | Exploratory
 
-In this phrase, we will use SQL to perform descriptive statistics, which help us explore the data and understand the distribution of values.
+In this phrase, we will use SQL to explore the data and understand the distribution of values.  
 
-Total trips: Members vs Casual,  Proportion of each user type
+- Total trips: Members vs Casual users, ratio of each user type
 
-<img width="682" alt="Total Trips" src="https://github.com/user-attachments/assets/32ac0341-b4fb-4346-8b8c-549ee8621475">
+<img width="682" alt="Total Trips" src="https://github.com/user-attachments/assets/32ac0341-b4fb-4346-8b8c-549ee8621475">  
 
-
-ride length distribution(in minute): Members vs Casual
-
-<img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">
-
-Rides counts and duration by bike types
-
-<img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">
+Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.70% made by casual users.
 
 
-The most frequent riding month:
+- ride length distribution(in minute): Members vs Casual
 
-<img width="574" alt="Rides by month" src="https://github.com/user-attachments/assets/c74af2d5-4a62-4943-b448-1012edb2c6ae">
+<img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">  
+
+Surprisely, we found the the duration if casual rider is much longer than annual members. 75% of duration below 24 minutes. 
+
+Interestingly, our analysis reveals that casual riders have significantly longer trip durations compared to annual members. Specifically, 75% of casual rider trips last less than 24 minutes, 75% of member rider trips last less than 14 mins.
+
+- Rides counts and duration by bike types
+
+<img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
+
+Classic bike is the most popular bike type choice for both annual members and casual riders. Meanwhile, docked bikes have the longest trip durations but the fewest ride counts.
 
 
-The most frequent riding day and hours:
+- The most frequent riding month:
 
-<img width="831" alt="Rides by day and hour" src="https://github.com/user-attachments/assets/deb44e38-2536-4938-9000-0184d10ddce6">
+<img width="574" alt="Rides by month" src="https://github.com/user-attachments/assets/c74af2d5-4a62-4943-b448-1012edb2c6ae">  
 
 
-The most popular start sation:
+- The most frequent riding day and hours:
+
+<img width="831" alt="Rides by day and hour" src="https://github.com/user-attachments/assets/deb44e38-2536-4938-9000-0184d10ddce6">  
+
+
+- The most popular start sation:
 
 <img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
