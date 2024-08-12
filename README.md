@@ -66,7 +66,7 @@ Index:
 ## PROCESS
 ## Data cleaning and Manipulation
 
-We will use **BigQuery** for data cleaning and manipulation due to ites efficiency in handling large datasets. SQL provides rapid processing capabilities, which is important for managing and analyzing substantial volumes of data. In contrast, Excel has limitations on the number of rows and columns in a single worksheet and can become slow when dealing with large amounts of data or  performing complex calculations.
+We will use **BigQuery** for data cleaning and manipulation due to its efficiency in handling large datasets. SQL provides rapid processing capabilities, which is important for managing and analyzing substantial volumes of data. In contrast, Excel has limitations on the number of rows and columns in a single worksheet and can become slow when dealing with large amounts of data or  performing complex calculations.
 
 ### Combining the Data
 
@@ -145,7 +145,6 @@ In this phrase, we will use SQL to explore the data and understand the distribut
 
 Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.70% made by casual users.
 
-
 - ride length distribution(in minute): Members vs Casual
 
 <img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">  
@@ -160,22 +159,25 @@ Classic bike is the most popular bike type choice for both annual members and ca
 
 - The most frequent riding month:
 
-<img width="574" alt="Rides by month" src="https://github.com/user-attachments/assets/c74af2d5-4a62-4943-b448-1012edb2c6ae">  
+<img width="508" alt="the busiest month" src="https://github.com/user-attachments/assets/65f0dc85-415b-42d3-91e1-35d10ca92c45">
 
 The summer season has the most ride trips
 
 - The most frequent riding day and hours:
 
-<img width="831" alt="Rides by day and hour" src="https://github.com/user-attachments/assets/deb44e38-2536-4938-9000-0184d10ddce6">  
+<img width="583" alt="the busiest day" src="https://github.com/user-attachments/assets/e9a11e86-e90c-454c-a4fb-3dac3f348bb7">
 
+The most frequented riding days for annual members and casual riders exhibit distinct patterns. Annual members prefer riding on Wesnesdays during the week, While the casual riders tend to ride most often on Saturdays during weekends.
+
+<img width="507" alt="the busiest hour" src="https://github.com/user-attachments/assets/450908fb-a0eb-4d86-870b-185da78112e6">
+
+Both annual members and casual riders have a shared peak riding time of 5 p.m., making it the most popular hour for bike trips among both groups.
 
 - The most popular start sation:
 
 <img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
-The most popular end station:
-
-![Picture2](https://github.com/user-attachments/assets/cd045153-c559-4dfb-b90a-05fc7dcd0efd)
+From above table, we can see the annual member and casual riders tend to have different favorient start station.
 
 
 
