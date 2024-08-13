@@ -177,7 +177,10 @@ Both annual members and casual riders have a shared peak riding time of 5 p.m., 
 
 <img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
-From above table, we can see the annual member and casual riders tend to have different favorient start station.
+The data presented in the table shows that there is a clear distinction between the starting stations utilized by annual members and casual riders, with no overlap among the top 10 most popular starting station for each group.
+For annual member, the most frequented starting station are Kingsbury St & Kinzie, Clinton St & Washington Blvd, and Clark St & Elm St. Notably, these location are situated in the city center, as observed from Google Street View. Additionally, station such as University Ave & 57th St, near the University of Chicago, so we initially assume that annual members predominantly use bicycles to commute within the city.
+
+
 
 
 
