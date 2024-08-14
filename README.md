@@ -181,7 +181,8 @@ The data presented in the table shows that there is a clear distinction between 
 
 For annual member, the most frequented starting station are Kingsbury St & Kinzie, Clinton St & Washington Blvd, and Clark St & Elm St. Notably, these location are situated in the city center, as observed from Google Street View. Additionally, station such as University Ave & 57th St, near the University of Chicago, so we initially assume that annual members predominantly use bicycles to commute within the city.
 
-For casual riders, 
+For casual riders, they show a clear preference for bike stations located near water, such as the one at Streeter Dr & Grand Ave. This location is close to the Chicago Riverwalk and popular attractions like Navy Pier. Given that casual riders mainly use their bikes on weekends, it can be inferred that their rides are largely motivated by tourist and leisure. 
+
 
 
 
