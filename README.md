@@ -145,7 +145,7 @@ In this phrase, We will use SQL to analyze the data and examine the distribution
 
 Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.70% made by casual users.
 
-- ride length distribution(in minute): Members vs Casual
+- **ride length distribution(in minute): Members vs Casual**
 
 <img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">  
 
