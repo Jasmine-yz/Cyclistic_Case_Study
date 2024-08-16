@@ -159,13 +159,15 @@ Classic bike is the most popular bike type choice for both annual members and ca
 
 - The most frequent riding month:
 
-<img width="508" alt="the busiest month" src="https://github.com/user-attachments/assets/65f0dc85-415b-42d3-91e1-35d10ca92c45">
+![ride by month](https://github.com/user-attachments/assets/6382d24d-d255-4282-b9d0-ac492bda25ee)
 
-The summer season has the most ride trips
+The riding frequency for both annual members and casual riders shows seasonal patterns. The peak riding period occurs in Q3, encompassing July, August, and September. In contrast, the number of rides significantly decreases in Q1. Notably, in the first and fourth quarters, the total number of rides for annual members is approximately three times and more than twice that of casual riders, respectively. In Q2 and Q3, this difference narrows to more than double.
+Regarding riding duration, casual riders show longer duration during the summer month. In contrast, annual members do not show a significant variation in riding duration across different seasons.
 
 - The most frequent riding day and hours:
 
-<img width="583" alt="the busiest day" src="https://github.com/user-attachments/assets/e9a11e86-e90c-454c-a4fb-3dac3f348bb7">
+![day_of_week](https://github.com/user-attachments/assets/128c81bc-adbe-4ecb-9e6f-6938c2149b3d)
+
 
 The most frequented riding days for annual members and casual riders exhibit distinct patterns. Annual members prefer riding on Wesnesdays during the week, While the casual riders tend to ride most often on Saturdays during weekends.
 
