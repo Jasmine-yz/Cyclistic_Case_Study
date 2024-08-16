@@ -168,12 +168,9 @@ Regarding riding duration, casual riders show longer duration during the summer 
 
 ![day_of_week](https://github.com/user-attachments/assets/128c81bc-adbe-4ecb-9e6f-6938c2149b3d)
 
+The riding patterns of annual members and casual riders differ significantly. Annual members predominantly ride on weekdays, with peak times occurring between 7-8 a.m. and 4-6 p.m. from Monday to Friday. In contrast, casual riders are more active on weekends, with their peak riding times typically in the afternoon. 
+Based on this conclusion, it can be inferred that annual members primarily use bicycles for commuting during weekdays, whereas casual riders tend to use them for leisure activities on weekend afternoons.
 
-The most frequented riding days for annual members and casual riders exhibit distinct patterns. Annual members prefer riding on Wesnesdays during the week, While the casual riders tend to ride most often on Saturdays during weekends.
-
-<img width="507" alt="the busiest hour" src="https://github.com/user-attachments/assets/450908fb-a0eb-4d86-870b-185da78112e6">
-
-Both annual members and casual riders have a shared peak riding time of 5 p.m., making it the most popular hour for bike trips among both groups.
 
 - The most popular start sation:
 
