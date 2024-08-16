@@ -200,9 +200,11 @@ Key Takeaway:
 - Electronic Bike: Favored by annual members alongside the Classic bike. 
 - Docked Bike: Not used by annual members. While docked bikes are used less frequently, they have the longest trip durations among the bike types.
 
-4. Seasonal trending: 
+4. Seasonal trending:
+
 Similarities:
 - Both annual members and casual riders shows distinct seasonal patterns in their bike usage. Bike usage is highest during the summer season, Bike usage is at its lowest during the winter season.
+
 Differences: 
 - Despite the overall decrease in riding frequency during colder months, annual members ride significantly more frequently than casual riders do in cold weather.
 
