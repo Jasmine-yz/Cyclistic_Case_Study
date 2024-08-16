@@ -135,7 +135,7 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
 
-## Analyze
+## ANALYZE
 
 In this phrase, We will use SQL to analyze the data and examine the distribution of values. This will help us identify usage patterns and understand the differences in how casual riders and annual members use Cyclistic bikes.
 
@@ -186,10 +186,27 @@ For annual member, the most frequented starting station are Kingsbury St & Kinzi
 For casual riders, they show a clear preference for bike stations located near water, such as the one at Streeter Dr & Grand Ave. This location is close to the Chicago Riverwalk and popular attractions like Navy Pier. Given that casual riders mainly use their bikes on weekends, it can be inferred that their rides are largely motivated by tourist and leisure. 
 
 
-
+## SHARE
+In this phase, we'll develop the visualizations and present our key finding.
 
 Key Takeaway:
 
+1. In 2023,  Annual members accounted for 59.72% of total cyclystic bike trips, while casual users accounted for 40.28%.
+   
+2. In terms of riding length, **casual riders** typically have a longer average ride duration than annual members. Monthly trends indicate that casual riders significantly increase their riding time during the warmer months compared to winter. Daily patterns also show that casual riders tend to have longer rides on weekends. In contrast, **annual members** have shorter average ride durations, but their riding length remains relatively stable, showing minimal variation with seasonal changes or weekends.
+
+3. Bike types usage:
+- Classic bike: The most popular choice for both annual members and casual riders. It is the preferred bike type for both groups.
+- Electronic Bike: Favored by annual members alongside the Classic bike. 
+- Docked Bike: Not used by annual members. While docked bikes are used less frequently, they have the longest trip durations among the bike types.
+
+4. Seasonal trending: 
+Similarities:
+- Both annual members and casual riders shows distinct seasonal patterns in their bike usage. Bike usage is highest during the summer season, Bike usage is at its lowest during the winter season.
+Differences: 
+- Despite the overall decrease in riding frequency during colder months, annual members ride significantly more frequently than casual riders do in cold weather.
+
+5. Daily pattern:
 
 
 it can be inferred that annual members primarily use bicycles for commuting during weekdays, whereas casual riders tend to use them for leisure activities on weekend afternoons.
