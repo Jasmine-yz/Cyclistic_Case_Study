@@ -135,11 +135,11 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
 
-## Analysis | Exploratory
+## Analyze
 
-In this phrase, we will use SQL to explore the data and understand the distribution of values.  
+In this phrase, We will use SQL to analyze the data and examine the distribution of values. This will help us identify usage patterns and understand the differences in how casual riders and annual members use Cyclistic bikes.
 
-- Total trips: Members vs Casual users, ratio of each user type
+- **Total trips: Members vs Casual users, ratio of each user type**
 
 <img width="682" alt="Total Trips" src="https://github.com/user-attachments/assets/32ac0341-b4fb-4346-8b8c-549ee8621475">  
 
@@ -151,20 +151,20 @@ Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.
 
 Interestingly, our analysis reveals that casual riders have significantly longer trip durations compared to annual members. Specifically, 75% of casual rider trips last less than 24 minutes, 75% of member rider trips last less than 14 mins.
 
-- Rides counts and duration by bike types
+- **Rides counts and duration by bike types**
 
 <img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
 
 Classic bike is the most popular bike type choice for both annual members and casual riders. Meanwhile, docked bikes have the longest trip durations but the fewest ride counts.
 
-- The most frequent riding month:
+- **The most frequent riding month:**
 
 ![ride by month](https://github.com/user-attachments/assets/6382d24d-d255-4282-b9d0-ac492bda25ee)
 
 The riding frequency for both annual members and casual riders shows seasonal patterns. The peak riding period occurs in Q3, encompassing July, August, and September. In contrast, the number of rides significantly decreases in Q1. Notably, in the first and fourth quarters, the total number of rides for annual members is approximately three times and more than twice that of casual riders, respectively. In Q2 and Q3, this difference narrows to more than double.
 Regarding riding duration, casual riders show longer duration during the summer month. In contrast, annual members do not show a significant variation in riding duration across different seasons.
 
-- The most frequent riding day and hours:
+- **The most frequent riding day and hours:**
 
 ![day_of_week](https://github.com/user-attachments/assets/128c81bc-adbe-4ecb-9e6f-6938c2149b3d)
 
@@ -175,7 +175,7 @@ The riding patterns of annual members and casual riders show significant differe
 In contrast, **casual riders** are more active on weekends, particularly in the afternoon. They also ride on weekdays, with peak times between 4-6 p.m., suggesting they use bicycles for commuting from work or school. Additionally, both annual and casual riders tend to have longer ride durations on weekends.
 
 
-- The most popular start sation:
+- **The most popular start sation:**
 
 <img width="1123" alt="Screenshot 2024-08-08 at 17 51 13" src="https://github.com/user-attachments/assets/07206418-a5fe-4c46-9529-0966d923a61b">
 
