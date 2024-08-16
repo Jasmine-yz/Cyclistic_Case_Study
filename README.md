@@ -161,7 +161,7 @@ Classic bike is the most popular bike type choice for both annual members and ca
 
 ![ride by month](https://github.com/user-attachments/assets/6382d24d-d255-4282-b9d0-ac492bda25ee)
 
-The riding frequency for both annual members and casual riders shows seasonal patterns. The peak riding period occurs in Q3, encompassing July, August, and September. In contrast, the number of rides significantly decreases in Q1. Notably, in the first and fourth quarters, the total number of rides for annual members is approximately three times and more than twice that of casual riders, respectively. In Q2 and Q3, this difference narrows to more than double.
+The riding frequency for both annual members and casual riders shows seasonal patterns. The peak riding period occurs in summer season, encompassing June, July, and August. In contrast, the number of rides significantly decreases in winter. Notably, in the first and fourth quarters, the total number of rides for annual members is approximately three times and more than twice that of casual riders, respectively. In Q2 and Q3, this difference narrows to more than double.
 Regarding riding duration, casual riders show longer duration during the summer month. In contrast, annual members do not show a significant variation in riding duration across different seasons.
 
 - **The most frequent riding day and hours:**
