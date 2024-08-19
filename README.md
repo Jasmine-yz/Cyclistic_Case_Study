@@ -188,7 +188,7 @@ For casual riders, they show a clear preference for bike stations located near w
 
 ## SHARE
 In this phase, we'll develop the visualizations and present our key finding.
-
+For Cyclistic dashboard, go to ###########
 **Key Takeaway**:
 
 1. In 2023,  Annual members accounted for 59.72% of total cyclystic bike trips, while casual users accounted for 40.28%.
@@ -219,6 +219,7 @@ In this phase, we'll develop the visualizations and present our key finding.
 
 In conclusion, it can be inferred that annual members primarily utilize bicycles for commuting during weekdays, while casual riders are more likely to use them for leisure activities on weekend afternoons.
 
+## ACT
 
 
 
