@@ -207,12 +207,16 @@ In this phase, we'll develop the visualizations and present our key finding.
    - Differences: Despite the overall decrease in riding frequency during colder months, annual members ride significantly more frequently than casual riders do in cold weather.
 
 5. Daily pattern:
-**Annual members**： Primarily ride on weekdays, with peak riding times between 7-8 a.m. and 4-6 p.m.
-**casual riders**：  More active on weekends, particularly in the afternoon. They also ride on weekdays, with peak times between 4-6 p.m.
+
+**Annual members**： Primarily ride on weekdays, with peak riding times between 7-8 a.m. and 4-6 p.m.  
+**Casual riders**：  More active on weekends, particularly in the afternoon. They also ride on weekdays, with peak times between 4-6 p.m.
 
 7. Most popular station:
+
 **Annual member**: Annual members's preferred sites are most located in the downtown, and these communities are generally considered to be ideal places to live, work, and enjoy urban life in Chicago. 
-**Casual member**: Casual riders' preferred sites are located near scenic spots, recreation areas and vibrant urban environment.
+ 
+**Casual member**: Casual riders' preferred sites are located near scenic spots, recreation areas and vibrant urban environment.  
+
 In conclusion, it can be inferred that annual members primarily utilize bicycles for commuting during weekdays, while casual riders are more likely to use them for leisure activities on weekend afternoons.
 
 
