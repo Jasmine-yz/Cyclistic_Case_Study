@@ -137,6 +137,8 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 
 ## ANALYZE
 
+SQL Query: [Analysis](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Analysis)
+
 In this phrase, We will use SQL to analyze the data and examine the distribution of values. This will help us identify usage patterns and understand the differences in how casual riders and annual members use Cyclistic bikes.
 
 - **Total trips: Members vs Casual users, ratio of each user type**
