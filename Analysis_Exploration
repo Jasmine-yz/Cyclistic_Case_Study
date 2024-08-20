@@ -8,69 +8,8 @@ SELECT
   ROUND(SUM(CASE WHEN member_casual = 'casual' THEN 1 ELSE 0 END) * 100/ COUNT(ride_id), 2) AS CasualPercentage
 FROM `2023biketrips`;
 
---Average ride lengths: Members vs Casual
 
-SELECT  
- AVG(ride_length) AS AvgRidelength_Total,
- AVG(CASE WHEN member_casual = 'member' THEN ride_length END) AS Avg_RideLength_Member,
- AVG(CASE WHEN member_casual = 'casual' THEN ride_length END) AS Avg_RideLength_Casual,
-
-FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull` 
-
-
-
---The most frequent riding day:
-
-WITH RideCounts AS(
-  SELECT 
-    member_casual,
-    day_of_week,
-    COUNT(*) AS ride_count,
-  FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
-  GROUP BY member_casual,day_of_week
-),
-
-RankedDays AS (
-    SELECT
-        member_casual,
-        day_of_week,
-        ride_count,
-        ROW_NUMBER() OVER (PARTITION BY member_casual ORDER BY ride_count DESC) AS Row_number
-    FROM
-        RideCounts
-)
-
-SELECT
-  member_casual,
-  day_of_week,
-  ride_count
-FROM RankedDays
-WHERE ROW_NUMBER = 1
-
-
---ride length distribution(in minute): Members vs Casual
-
-```WITH Quantiles AS (
-    SELECT
-        member_casual,
-        APPROX_QUANTILES(ride_length, 4) AS quantiles
-    FROM
-        `2023biketrips`
-    GROUP BY
-        member_casual
-),
-
-Aggregates AS (
-    SELECT
-        member_casual,
-        AVG(ride_length) AS Avg_RideLength,
-        MAX(ride_length) AS Max_RideLength,
-        MIN(ride_length) AS Min_RideLength
-    FROM
-        `2023biketrips`
-    GROUP BY
-        member_casual
-)
+--Ride length distribution(in minute): Members vs Casual
 
 SELECT
     a.member_casual,
@@ -85,55 +24,98 @@ FROM
 JOIN
     Quantiles q
 ON
-    a.member_casual = q.member_casual```
+    a.member_casual = q.member_casual
 
 
 
+--Rides counts and duration by bike types
 
-
-
-
-
-
---Count of Rides and Total Ride Duration by Rideable Type
-```
 SELECT
   member_casual,
   rideable_type,
   COUNT(*) AS rides_count,
   ROUND(AVG(ride_length),2) AS avg_ride_length_mins
 
-FROM`project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+FROM`2023biketrips`
 GROUP BY member_casual, rideable_type
-ORDER BY rides_count DESC```
+ORDER BY rides_count DESC
 
 
+--Rides by month: member vs casual
+SELECT
+    member_casual,
+    EXTRACT(MONTH FROM ride_date) AS month,
+    COUNT(*) AS ride_count,
+    ROUND(AVG(ride_length),2) AS avg_ride_duration
+FROM `2023biketrips`
+  WHERE member_casual = 'member'
+  GROUP BY member_casual, month 
+  ORDER BY month 
 
 
---Rides by hour and day
-```WITH RideCounts AS(
-  SELECT
+--Rides by day and hour
+
+SELECT  
+  member_casual,
+  day_of_week,
+  EXTRACT(HOUR FROM started_at) AS hour,
+  COUNT(*) AS ride_count
+FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+WHERE member_casual = 'member'
+GROUP BY member_casual,day_of_week,hour 
+ORDER BY ride_count DESC;
+
+--Rides by Day and Ride Counts
+
+WITH RideCounts AS(
+  SELECT 
     member_casual,
     day_of_week,
-    EXTRACT(HOUR FROM started_at) AS hour,
-    COUNT(*) AS ride_count
+    COUNT(*) AS ride_count,
+    ROUND(AVG(ride_length),2) AS ride_length
   FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
-  GROUP BY member_casual,day_of_week,Hour
+  GROUP BY member_casual,day_of_week
 ),
-RankedHour AS(
-  SELECT  
-    member_casual,
-    day_of_week,
-    hour,
-    ride_count,
-    ROW_NUMBER() OVER(PARTITION BY member_casual ORDER BY ride_count DESC) AS num_rank
-  FROM RideCounts
+
+RankedDays AS (
+    SELECT
+        member_casual,
+        day_of_week,
+        ride_count,
+        ROW_NUMBER() OVER (PARTITION BY member_casual ORDER BY ride_count DESC) AS num_rank,
+        ride_length
+    FROM
+        RideCounts
 )
+
 SELECT
   num_rank,
   member_casual,
   day_of_week,
-  hour,
-  ride_count
-FROM RankedHour
-ORDER BY num_rank```
+  ride_count,
+  ride_length
+FROM RankedDays
+
+--The most popular start sation:
+
+SELECT 
+  member_casual,
+  start_station_name, 
+  COUNT(ride_id) AS total_trips
+FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+WHERE member_casual = 'member'
+GROUP BY member_casual, start_station_name
+ORDER BY total_trips DESC LIMIT 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
