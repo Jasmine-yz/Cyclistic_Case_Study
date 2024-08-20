@@ -60,7 +60,7 @@ SELECT
   day_of_week,
   EXTRACT(HOUR FROM started_at) AS hour,
   COUNT(*) AS ride_count
-FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+FROM `2023biketrips`
 WHERE member_casual = 'member'
 GROUP BY member_casual,day_of_week,hour 
 ORDER BY ride_count DESC;
@@ -73,7 +73,7 @@ WITH RideCounts AS(
     day_of_week,
     COUNT(*) AS ride_count,
     ROUND(AVG(ride_length),2) AS ride_length
-  FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+  FROM `2023biketrips`
   GROUP BY member_casual,day_of_week
 ),
 
@@ -102,7 +102,7 @@ SELECT
   member_casual,
   start_station_name, 
   COUNT(ride_id) AS total_trips
-FROM `project-1-429715.cyclistic_tripdata.2023biketrips_cleaned_nonull`
+FROM `2023biketrips`
 WHERE member_casual = 'member'
 GROUP BY member_casual, start_station_name
 ORDER BY total_trips DESC LIMIT 10;
