@@ -201,7 +201,11 @@ For casual riders, they show a clear preference for bike stations located near w
 ## SHARE  <img src="https://github.com/user-attachments/assets/2629856d-7a21-469b-8573-200206d7a39b" width="35" height="35">
 
 In this phase, we'll develop the visualizations and present our key finding.  
-For Cyclistic dashboard, go to [Tableau](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
+For Cyclistic dashboard, go to [Tableau Public](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
+
+
+
+
 
 **Key Takeaway**:
 
