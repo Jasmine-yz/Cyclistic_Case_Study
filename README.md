@@ -156,8 +156,8 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 
 <img width="711" alt="Screenshot 2024-08-23 at 09 50 24" src="https://github.com/user-attachments/assets/692d68a7-4a35-4d2c-a04d-04235d360e0f">
 
-Annual Members: Annual members tend to use classic bikes and e-bikes more, with classic bikes slightly more popular than e-bikes.
-Casual Riders: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, stationary bikes have the longest ride time but the fewest rides.
+**Annual Members**: Annual members tend to use classic bikes and e-bikes more, with classic bikes slightly more popular than e-bikes.  
+**Casual Riders**: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, stationary bikes have the longest ride time but the fewest rides.
 
 The table below is based on a dataset with all missing items removed. As a result, there are noticeable gaps in the data. 
 <img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
@@ -205,8 +205,8 @@ For Cyclistic dashboard, go to ###########
 - **annual members**: Shorter average ride durations, but their riding length remains relatively stable, showing minimal variation with seasonal changes or weekends.
 
 3. Bike types usage:
-- Classic bike: The most popular choice for both annual members and casual riders. It is the preferred bike type for both groups.
-- Electronic Bike: Favored by annual members alongside the Classic bike. 
+- Classic bike: The popular choice for both annual members and casual riders. It is the preferred bike type for both groups.
+- Electronic Bike: Also the most popular choice for both annual member and casual riders, but more popular with casual riders. 
 - Docked Bike: Not used by annual members. While docked bikes are used less frequently, they have the longest trip durations among the bike types.
 
 4. Seasonal trending:
