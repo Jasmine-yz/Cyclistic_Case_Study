@@ -6,7 +6,9 @@ In this case study, I will undertake a real-world task as a junior data analyst 
 Cyclistic is a bike-sharing company based in Chicago, with two types of customers: annual members and casual riders.  Annual members purchase yearly memberships, While casual riders use single-ride or full-day passes. Finance analysts have concluded that annual members are significantly more profitable than casual riders. To boost profitability, marketing director Moreno believes increasing annual memberships is key. The marketing analytics team want to understand how casual riders and annual members use Cyclistic bikes differently to design a new marketing strategy to convert casual riders into annual members. However, before implementing any changes, the recommendations from the marketing analytics team need to be approved by Cyclistic's executives. 
 
 
-## ASK
+## ASK 🤔
+
+
 ### Define the problems:  
 
 Three questions will guide the future marketing programs:  
@@ -25,7 +27,7 @@ Moreno has tasked me with addressing the first questions: How do annual members 
 Analyze historical bikes trip to identify usage patterns and understand the difference in how casual riders and annual members utilize Cyclistic bikes.
 
 
-## PREPARE
+## PREPARE  <img src="https://github.com/user-attachments/assets/e1605ef2-7237-4eda-9ba1-13654c61e6a5" width="40" height="40">
 ### Data Sources
 I will be using Cyclistic historical trip data from Jan,2023 to Dec,2023, which can be downloaded [HERE](https://divvy-tripdata.s3.amazonaws.com/index.html), The data has been made available by Motivate International Inc. under this [lisence](https://divvybikes.com/data-license-agreement). This is public data that you can use to explore how different customer types are using Cyclistic bikes.But note that data-privacy issues prohibit you from using riders'personally identiable information. This means that you won't be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 
@@ -63,7 +65,7 @@ Index:
 'member_casual'             # Rider Types: Member or Casual
 ```
 
-## PROCESS
+## PROCESS  <img src="https://github.com/user-attachments/assets/db9c5e4f-7908-4c09-b159-cee9b5aed515" width="40" height="40">
 ## Data cleaning and Manipulation
 
 We will use **BigQuery** for data cleaning and manipulation due to its efficiency in handling large datasets. SQL provides rapid processing capabilities, which is important for managing and analyzing substantial volumes of data. In contrast, Excel has limitations on the number of rows and columns in a single worksheet and can become slow when dealing with large amounts of data or  performing complex calculations.
@@ -134,7 +136,7 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
 
-## ANALYZE
+## ANALYZE  <img src="https://github.com/user-attachments/assets/105841f8-0a05-4267-9554-eee7c541fd2d" width="40" height="40">
 
 SQL Query: [Analysis](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Analysis)
 
@@ -196,9 +198,10 @@ For annual member, the most frequented starting station are Kingsbury St & Kinzi
 For casual riders, they show a clear preference for bike stations located near water, such as the one at Streeter Dr & Grand Ave. This location is close to the Chicago Riverwalk and popular attractions like Navy Pier. Given that casual riders mainly use their bikes on weekends, it can be inferred that their rides are largely motivated by tourist and leisure. 
 
 
-## SHARE
+## SHARE  <img src="https://github.com/user-attachments/assets/2629856d-7a21-469b-8573-200206d7a39b" width="35" height="35">
+
 In this phase, we'll develop the visualizations and present our key finding.  
-For Cyclistic dashboard, go to ###########
+For Cyclistic dashboard, go to [Tableau](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
 
 **Key Takeaway**:
 
