@@ -83,7 +83,7 @@ SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/
 
 **Verification:** 
 - Missing values were found in the 'start_station_name', 'end_station_name', 'end_lat', and 'end_lng' fields. Typically, there are two approaches to handle missing data: removing rows with empty cells or imputing new values. In this case, we will choose to remove the rows with missing values.
-- Removing a large portion of missing data could potentially impact the results of your analysis. However, after comparing the data before and after removal of empty rows, the overall trends in bike usage by member and casual riders remained consistent. The only notable change is that the usage ratios of e-bikes by casual riders and members are now distinctly different.
+- Removing a large portion of missing data could potentially impact the results of your analysis. However, after comparing the data before and after removal of empty rows, the overall trends in bike usage by member and casual riders remained consistent. The only **notable change** is that the usage ratios of e-bikes by casual riders and members are now distinctly different.
 - So for the data analysis part, the bike type ride counts will use the unremoved dataset.
 - additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
 
@@ -130,7 +130,7 @@ SQL Query: [Data Cleaning](https://github.com/Jasmine-yz/Cyclistic_Case_Study/bl
    - day_of_week
    - ride_date
      
-2. Trips with duration longer than a day or less than a minute were deteted.
+2. Trips with duration longer than a day or less than a minute were deleted.
 3. All the rows having missing values are deleted.
 4. 1,551,156 rows are removed in this step.
 
@@ -156,10 +156,10 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 
 <img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
 
-Classic bike is the most popular bike type choice for both annual members and casual riders. Meanwhile, docked bikes have the longest trip durations but the fewest ride counts.
-
 <img width="711" alt="Screenshot 2024-08-23 at 09 50 24" src="https://github.com/user-attachments/assets/692d68a7-4a35-4d2c-a04d-04235d360e0f">
 
+Annual Members: Annual members tend to use classic bikes and e-bikes more, with classic bikes slightly more popular than e-bikes.
+Casual Riders: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, stationary bikes have the longest ride time but the fewest rides.
 
 - **The most frequent riding month:**
 
