@@ -154,12 +154,14 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 
 - **Rides counts and duration by bike types**
 
-<img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
-
 <img width="711" alt="Screenshot 2024-08-23 at 09 50 24" src="https://github.com/user-attachments/assets/692d68a7-4a35-4d2c-a04d-04235d360e0f">
 
 Annual Members: Annual members tend to use classic bikes and e-bikes more, with classic bikes slightly more popular than e-bikes.
 Casual Riders: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, stationary bikes have the longest ride time but the fewest rides.
+
+The table below is based on a dataset with all missing items removed. As a result, there are noticeable gaps in the data. 
+<img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
+
 
 - **The most frequent riding month:**
 
