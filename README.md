@@ -75,22 +75,21 @@ SQL Query: [Data Combining](https://github.com/Jasmine-yz/Cyclistic_Case_Study/b
 I created a Google Cloud Storage bucket to store 12 uploaded CSV files, then established a project in BigQuery and uploaded these files as datasets. Afterwards, I merged the CSV files into a single table named `2023_biketrips`, resulting in a combined table with a total of **5,719,877** rows.
 
 ### Data Inspection
-SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Exploration.sql)
+SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/blob/main/Data%20Inspection.sql)
 
 1. Identifying Missing Values
 
 ![null_value](https://github.com/user-attachments/assets/18bc8d5a-1dfe-4b44-836a-6baa56b888a5)
 
 **Verification:** 
-- missing values were identified in several columns. Null values in 'start_station_name', 'end_station_name', 'end_lat' and 'end_lng' fields will be removed during cleaning process. 
+- Missing values were found in the 'start_station_name', 'end_station_name', 'end_lat', and 'end_lng' fields. Typically, there are two approaches to handle missing data: removing rows with empty cells or imputing new values. In this case, we will choose to remove the rows with missing values.
+- Removing a large portion of missing data could potentially impact the results of your analysis. However, after comparing the data before and after removal of empty rows, the overall trends in bike usage by member and casual riders remained consistent. The only notable change is that the usage ratios of e-bikes by casual riders and members are now distinctly different.
+- So for the data analysis part, the bike type ride counts will use the unremoved dataset.
 - additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
-- Note: In real-world scenarios, it's important to be cautious when removing missing values. Missing values can come from various sources, such as data entry errors, data conversion issues, or incomplete data collection. It's crucial to assess how missing values impact the overall integrity of the dataset. If a large portion of the data is missing, it may distort the results of your analyses or modeling.
-
 
 2. Identifying Duplicate Entries (since the unique key ride_id has no null value)
 
 **Verification:** There is no duplicates.
-
 
 3. Identifying Invalid Entries
 
@@ -158,6 +157,9 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 <img width="708" alt="bike_type_ride_count" src="https://github.com/user-attachments/assets/a2ee7190-3294-46ca-9c0c-a1a50c6dcef7">  
 
 Classic bike is the most popular bike type choice for both annual members and casual riders. Meanwhile, docked bikes have the longest trip durations but the fewest ride counts.
+
+<img width="711" alt="Screenshot 2024-08-23 at 09 50 24" src="https://github.com/user-attachments/assets/692d68a7-4a35-4d2c-a04d-04235d360e0f">
+
 
 - **The most frequent riding month:**
 
