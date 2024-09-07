@@ -161,7 +161,7 @@ Interestingly, our analysis reveals that casual riders have significantly longer
 <img width="711" alt="Screenshot 2024-08-23 at 09 50 24" src="https://github.com/user-attachments/assets/692d68a7-4a35-4d2c-a04d-04235d360e0f">
 
 **Annual Members**: Annual members tend to use classic bikes and e-bikes more, with classic bikes slightly more popular than e-bikes.  
-**Casual Riders**: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, stationary bikes have the longest ride time but the fewest rides.
+**Casual Riders**: The most popular type of bike among casual riders is e-bikes, followed by classic bikes. Meanwhile, docked bikes have the longest ride time but the fewest rides.
 
 The table below is based on a dataset with all missing items removed. As a result, there are noticeable gaps in the data.   
 
@@ -198,44 +198,21 @@ For annual member, the most frequented starting station are Kingsbury St & Kinzi
 For casual riders, they show a clear preference for bike stations located near water, such as the one at Streeter Dr & Grand Ave. This location is close to the Chicago Riverwalk and popular attractions like Navy Pier. Given that casual riders mainly use their bikes on weekends, it can be inferred that their rides are largely motivated by tourist and leisure. 
 
 
-## SHARE  <img src="https://github.com/user-attachments/assets/2629856d-7a21-469b-8573-200206d7a39b" width="35" height="35">
+## SHARE and ACT  <img src="https://github.com/user-attachments/assets/2629856d-7a21-469b-8573-200206d7a39b" width="35" height="35">
 
 In this phase, we'll develop the visualizations and present our key finding.  
-For Cyclistic dashboard, go to [Tableau Public](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
+
+**Stakeholder presentation**: 
+
+**Tableau dashboard**: go to [Tableau Public](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
 
 
 
 
 
-**Key Takeaway**:
 
-1. In 2023,  Annual members accounted for 59.72% of total cyclystic bike trips, while casual users accounted for 40.28%.
-   
-2. riding length:
-- **casual riders**: typically have a longer average ride duration than annual members. Monthly trends indicate that casual riders significantly increase their riding time during the warmer months compared to winter. Daily patterns also show that casual riders tend to have longer rides on weekends.
-- **annual members**: Shorter average ride durations, but their riding length remains relatively stable, showing minimal variation with seasonal changes or weekends.
 
-3. Bike types usage:
-- Classic bike: The popular choice for both annual members and casual riders. It is the preferred bike type for both groups.
-- Electronic Bike: Also the most popular choice for both annual member and casual riders, but more popular with casual riders. 
-- Docked Bike: Not used by annual members. While docked bikes are used less frequently, they have the longest trip durations among the bike types.
 
-4. Seasonal trending:
-- Similarities: Both annual members and casual riders shows distinct seasonal patterns in their bike usage. Bike usage is highest during the summer season, Bike usage is at its lowest during the winter season.
-- Differences: Despite the overall decrease in riding frequency during colder months, annual members ride significantly more frequently than casual riders do in cold weather.
-
-5. Daily pattern:
-- **Annual members**： Primarily ride on weekdays, with peak riding times between 7-8 a.m. and 4-6 p.m.
-- **Casual riders**：  More active on weekends, particularly in the afternoon. They also ride on weekdays, with peak times between 4-6 p.m.
-
-6. Most popular station:
-- **Annual member**: Annual members's preferred sites are most located in the downtown, and these communities are generally considered to be ideal places to live, work, and enjoy urban life in Chicago.
-- **Casual member**: Casual riders' preferred sites are located near scenic spots, recreation areas and vibrant urban environment.  
-
-In conclusion, it can be inferred that annual members primarily utilize bicycles for commuting during weekdays, while casual riders are more likely to use them for leisure activities on weekend afternoons.
-
-## ACT
-### Recommendations
 
 
 
