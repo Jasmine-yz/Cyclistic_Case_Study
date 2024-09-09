@@ -84,7 +84,7 @@ SQL Query: [Data Inspection](https://github.com/Jasmine-yz/Cyclistic_Case_Study/
 ![null_value](https://github.com/user-attachments/assets/18bc8d5a-1dfe-4b44-836a-6baa56b888a5)
 
 **Verification:** 
-- Missing values were found in the 'start_station_name', 'end_station_name', 'end_lat', and 'end_lng' fields. Typically, there are two approaches to handle missing data: removing rows with empty cells or imputing new values. In this case, we will choose to remove the rows with missing values.
+- Missing values were found in the 'start_station_name', 'end_station_name', 'end_lat', and 'end_lng' fields. Typically, there are two approaches to handle missing data: removing rows with empty cells or inputing new values. In this case, we will choose to remove the rows with missing values.
 - Removing a large portion of missing data could potentially impact the results of your analysis. However, after comparing the data before and after removal of empty rows, the overall trends in bike usage by member and casual riders remained consistent. The only **notable change** is that the usage ratios of e-bikes by casual riders and members are now distinctly different.
 - So for the data analysis part, the bike type ride counts will use the unremoved dataset.
 - additionally, The 'start_station_id' and 'end_station_id' fields will be deleted from our analysis as they do not contribute relevant information. 
