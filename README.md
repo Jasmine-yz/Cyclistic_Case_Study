@@ -153,8 +153,7 @@ Of the total 4,168,721 trips in 2023, 64.30% were made by annual members and 35.
 
 <img width="1008" alt="Screenshot 2024-08-07 at 21 30 09" src="https://github.com/user-attachments/assets/ce67d387-9878-4297-8319-ead91d6cf51e">  
 
-Interestingly, our analysis reveals that casual riders have significantly longer trip durations compared to annual members. Specifically, 75% of casual rider trips last less than 24 minutes, 75% of member rider trips last less than 14 mins.
-
+Interestingly, our analysis reveals that casual riders have significantly longer trip durations compared to annual members. Specifically, Casual riders not only have a higher average ride duration but also a higher median and 75th percentile ride durations. This suggests that Casual riders generally take longer trip.
 
 - **Rides counts and duration by bike types**
 
