@@ -201,7 +201,7 @@ For casual riders, they show a clear preference for bike stations located near w
 
 In this phase, we'll develop the visualizations and present our key finding.  
 
-**Stakeholder presentation**: [Cyclistic Case Study](https://docs.google.com/presentation/d/16bPavNF22HBq3Z8CHDdBF1BfIx1bXbv1QdhiHECjJvc/edit#slide=id.g2fd4e0886e2_0_10)
+**Stakeholder presentation**: [Cyclistic Case Study](https://docs.google.com/presentation/d/16bPavNF22HBq3Z8CHDdBF1BfIx1bXbv1QdhiHECjJvc/edit?usp=drive_link)
 
 **Tableau dashboard**: go to [Tableau Public](https://public.tableau.com/app/profile/ying.zhang2739/viz/GoogleDataAnalyticsCapstoneProjectCyclistic_17243392723190/OVERVIEW)
 
